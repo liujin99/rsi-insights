@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Papers (PDFs)
+papers/
+
+# Temp
+*.tmp
+*.bak
+*.log
+
+# opencode agent workspace
+.opencode/
