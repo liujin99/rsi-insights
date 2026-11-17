@@ -6,8 +6,8 @@
 
 ## 评估进度（2026-11-17 更新）
 
-- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
-- **已读摘要、暂留 watch**：CUA-Master（嵌套双环，明确批评"自生成经验式 RSI 收益递减"——正面批评视角）；R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；EvalResearchBench（**PSU/OSU/UCSC〔Qingyun Wu/Huazheng Wang/Jishen Zhao〕，agent 自建评测反馈——Q6 直接相关，优先深读**）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
+- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；**EvalResearchBench→#51（T2 [高价值]，2026-11-17 深读入库：Q6 评估环首把尺子，深读文档已建）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
+- **已读摘要、暂留 watch**：CUA-Master（嵌套双环，明确批评"自生成经验式 RSI 收益递减"——正面批评视角）；R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
 - **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
 
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
@@ -37,7 +37,7 @@
 | 标题 | arXiv | 日期 | 热度 | 备注 |
 |---|---|---|---|---|
 | Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning | 2610.33956 | 10-27 | up 35 | 长时程 RSI 基准（连 #20 RE-Bench） |
-| EvalResearchBench: Can AI Agents Build Their Own Feedback for RSI? | 2610.04184 | 10-23 | up 19 | agent 自建反馈——准则 6 直接相关，必读 |
+| EvalResearchBench: Can AI Agents Build Their Own Feedback for RSI? | 2610.04184 | 10-23 | up 19 | **已入库 #51（T2 [高价值]，2026-11-17 深读）**：agent 自建评测首标准 benchmark——PA≈75%/CCC≈23/dev≠sealed；深读文档已建，遗留 repo 复算核验+第二届追踪 |
 | DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses | 2610.23839 | 10-19 | up 19 | 假设发现（L4 评估线，连 Q6） |
 | ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains? | 2610.34386 | 10-27 | up 11 | 多域 agent-改-模型 gym（与 #37 同构问题） |
 | Self-Evaluating Recursive Agents | 2610.04902 | 10-20 | up 12 | 自评递归 agent——准则 6 高危样本 |
@@ -104,6 +104,6 @@ RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2
 
 **判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
 
-## 评估优先级（changelog 同步；2026-11-17 二次更新）
+## 评估优先级（changelog 同步；2026-11-17 三次更新）
 
-1. **EvalResearchBench**（Q6 直接相关——The Trinity 调查完成后顺移至最高）→ 2. **CUA-Master**（50，对自生成经验 RSI 的批评视角）→ 3. **R²Orch**（49）→ 4. **CoEvo-RSI**（46，NUS 系）→ 5. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 6. The Trinity 深读+开源兑现追踪（总表待办①遗留）→ 其余按热度。
+1. **CUA-Master**（50，对自生成经验 RSI 的批评视角——EvalResearchBench 深读完成后顺移至最高）→ 2. **R²Orch**（49）→ 3. **CoEvo-RSI**（46，NUS 系）→ 4. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 5. The Trinity 深读+开源兑现追踪（总表待办⑩）→ 6. EvalResearchBench 遗留：repo 复算核验+第二届追踪 → 其余按热度。
