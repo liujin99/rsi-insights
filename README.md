@@ -59,6 +59,7 @@ rsi-insights/
 │   ├── CriteriaExposure_深度分析.md    # #79 深读文档（2026-11-17，深读批次⑨）
 │   ├── CLE_深度分析.md                  # #57 深读文档（2026-11-17，深读批次⑩）
 │   ├── R2Orch_深度分析.md              # #53 深读文档（2026-11-17，深读批次⑪）
+│   ├── CUA-Master_深度分析.md           # #52 深读文档（2026-11-17，深读批次⑫）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -114,7 +115,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 53 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74〕/ 轻评估批次③〔#75-#81，up≥20 七条：Épi/Criteria Exposure/EmoReward/MoLRSI/VibeGame/Physical AI RSI/PhysRSI-eval〕/ 轻评估批次④〔#82-#89，up≥10 八条：DiscoveryRSI/Build Don't Play（AutoTavern）/ECHO/SERA/ParetoRSI-Gym/PyRUA-REAL/ACE-RL/Auxiliary Rewards〕），共 89 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 53 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52〔深读〕/ R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74〕/ 轻评估批次③〔#75-#81，up≥20 七条：Épi/Criteria Exposure/EmoReward/MoLRSI/VibeGame/Physical AI RSI/PhysRSI-eval〕/ 轻评估批次④〔#82-#89，up≥10 八条：DiscoveryRSI/Build Don't Play（AutoTavern）/ECHO/SERA/ParetoRSI-Gym/PyRUA-REAL/ACE-RL/Auxiliary Rewards〕），共 89 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
