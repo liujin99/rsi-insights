@@ -44,6 +44,7 @@ rsi-insights/
 │   ├── EvalResearchBench_深度分析.md    # #51 深读文档（首篇；此后深读一篇一档）
 │   ├── Dream-RSI_深度分析.md            # #38 深读文档（2026-11-17）
 │   ├── InfraRSI_深度分析.md             # #39 深读文档（2026-11-17）
+│   ├── TheTrinity_深度分析.md           # #50 深读文档（2026-11-17）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -145,7 +146,7 @@ rsi-insights/
 | 43 | **OXR** | SoMarkAI | 开源模型 2026.10（3.8k⭐，论文未出） | 1.3B 文档解析模型，**后训练用 RSI loop（自称该品类首次）**，三榜第一+速度领先——RSI 进入垂直产品管线的首个公开样本；⚠️ RSI 主张不可审计、论文即触发器；**工业实战候选观察席** |
 | 44 | **RSI-Anything** | 浙大/上海AI Lab+CUHK 系（Ouyang/Heng/Yin 等，待核） | arXiv 2610.13912（2026.10）+1.2k⭐+数据集 | JEPA-Anything 世界模型当预测器选动作选数据、观测反馈驱动改进——五域通用（代码修复/GUI/实验规划/反应优化/免疫科学）："世界模型替代外部 verifier"路线 |
 | 45 | **RSIHub** | 多机构（Wang 等，待核） | arXiv 2610.32253（2026.10） | agent 进化方法的可组合研究基建（算子+可变资源声明，执行/评估/恢复/谱系全托管）——"方法比较需要共享基建"的学术侧回应，连 reef/hermit |
-| 50 | **The Trinity** | 品牌匿名→查实 NUS HPC-AI Lab 生态（Yang You/Wangbo Zhao 锚点+CUHK/Xidian/Tongji，BibTeX 21 人全披露） | arXiv 2610.36077（2026.10）+MIT 代码（71⭐）+HF Daily #1（up 161） | 冻结底座 harness 进化：任务重组为**能力树**+Real2Sim2Real 世界生成+harness 树选择性继承+能力感知路由，44 benchmark（18 held-out）+2 真机（自报）；⚠️ 环境/产物/Router 未开源（Open-Source Plan 在途） |
+| 50 | **The Trinity** | 开放式匿名已查实：InfRec+NUS+Xidian+Tongji+UCB+CUHK+HKUST+HKU+上海创新研究院（21 人全披露，通讯 Pengfei Zhou/Odin Zhang/Yang You） | arXiv 2610.36077（2026.10）+MIT 代码（71⭐）+HF Daily #1（up 161） | 冻结底座（Claude Opus 5）harness 进化：任务重组为**能力树**+Real2Sim2Real（世界生成**排除目标任务布局与解法**）+harness 树选择性继承+能力感知路由；**深读**：46 benchmark（28+18）Train 39.1→73.2、迭代 2-4 仍 +9.4/+6.4（Q1 L3 未饱和数据点）、路由逼近 Oracle、真机 0→60%；**防泄漏纪律=论文级范本**（hash 锁定预测账本）；⚠️ 闭源底座+9/28 训练基准自建+核心工件未开源 |
 | 51 | **EvalResearchBench** | OSU/UCSD/UCSC/PSU+AG2 AI（Qingyun Wu=AutoGen 系） | arXiv 2610.04184（2026.10）+代码（5⭐） | **"agent 自建评测"第一个标准 benchmark**：9 前沿模型当 researcher 冻结交付评测器——最优 PA≈75%（天花板 91%）、CCC≈23：排序可复制、水平难复制；**dev 最优≠sealed 最优**（准则6 定量实锤）；人类采样强基线、最低成本者最高 PA；**[高价值]**，深读文档已建 |
 | 52 | **CUA-Master** | MMLab CUHK+THU+HKUST(GZ)+京东探索研究院 | arXiv 2611.03126（2026.11）+代码（128⭐）+HF 权重 27B | 对"自生成经验式 RSI"的正面批评+替代路线：双飞轮（模型弱项引导**开放世界数据**构建→训练）——**self-policy 注释器增益有限 vs 更强注释器持续增益**（Q1 收敛侧受控对照）；27B 四榜自报竞争力（OSWorld Verified 80.2） |
 | 53 | **R²Orch** | CUHK-SZ+复旦+UIUC+清华+NUS | arXiv 2610.22740（2026.10）+代码（49⭐） | 编排层**信号可靠性工程**：Recursive Learnability（撤走技能下度量可学习性，p=0/1 即 advantage collapse）+Skill Withdrawal，命题级理论——12/12 榜全胜+**零技能保持精度**+迁移 6 底座；⚠️ 9B 规模、自报 |
