@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **51 works tracked** (36 launch seeds + 15 later entries #37–#51 incl. the industry batch, The Trinity, and the EvalResearchBench deep-read), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **52 works tracked** (36 launch seeds + 16 later entries #37–#52 incl. the industry batch, The Trinity, and two watch-evaluated works), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -97,7 +97,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 15 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔首个深读〕），共 51 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 16 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52），共 52 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -145,6 +145,7 @@ rsi-insights/
 | 45 | **RSIHub** | 多机构（Wang 等，待核） | arXiv 2610.32253（2026.10） | agent 进化方法的可组合研究基建（算子+可变资源声明，执行/评估/恢复/谱系全托管）——"方法比较需要共享基建"的学术侧回应，连 reef/hermit |
 | 50 | **The Trinity** | 品牌匿名→查实 NUS HPC-AI Lab 生态（Yang You/Wangbo Zhao 锚点+CUHK/Xidian/Tongji，BibTeX 21 人全披露） | arXiv 2610.36077（2026.10）+MIT 代码（71⭐）+HF Daily #1（up 161） | 冻结底座 harness 进化：任务重组为**能力树**+Real2Sim2Real 世界生成+harness 树选择性继承+能力感知路由，44 benchmark（18 held-out）+2 真机（自报）；⚠️ 环境/产物/Router 未开源（Open-Source Plan 在途） |
 | 51 | **EvalResearchBench** | OSU/UCSD/UCSC/PSU+AG2 AI（Qingyun Wu=AutoGen 系） | arXiv 2610.04184（2026.10）+代码（5⭐） | **"agent 自建评测"第一个标准 benchmark**：9 前沿模型当 researcher 冻结交付评测器——最优 PA≈75%（天花板 91%）、CCC≈23：排序可复制、水平难复制；**dev 最优≠sealed 最优**（准则6 定量实锤）；人类采样强基线、最低成本者最高 PA；**[高价值]**，深读文档已建 |
+| 52 | **CUA-Master** | MMLab CUHK+THU+HKUST(GZ)+京东探索研究院 | arXiv 2611.03126（2026.11）+代码（128⭐）+HF 权重 27B | 对"自生成经验式 RSI"的正面批评+替代路线：双飞轮（模型弱项引导**开放世界数据**构建→训练）——**self-policy 注释器增益有限 vs 更强注释器持续增益**（Q1 收敛侧受控对照）；27B 四榜自报竞争力（OSWorld Verified 80.2） |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
