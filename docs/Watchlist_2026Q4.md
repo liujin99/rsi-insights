@@ -4,6 +4,12 @@
 > **收录纪律**：凭标题+热度收录，**未读原文、未定梯队——watch ≠ 参考**（对齐姊妹库纪律：直接参考权=工业实战精选独占；新文未经广泛验证只作分析素材）。评估时逐条读原文→定梯队→入总表；不达标者移出并记录。
 > **背景判读**：本窗口 RSI 主题论文密度极高（43 条/30 天），36氪 2026-09"刷屏全网"佐证领域已进入热点爆发期——**噪声同步放大，准则 6（自我验证风险）与证据强度排序的把关作用比平时更重要。**
 
+## 评估进度（2026-11-17 更新）
+
+- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
+- **已读摘要、暂留 watch**：The Trinity（**up 161 最高热，但作者方匿名"The Trinity Research Team"、机构未披露——按准则2 不可定级，先扒机构归属，最高优先**）；CUA-Master（嵌套双环，明确批评"自生成经验式 RSI 收益递减"——正面批评视角）；R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；EvalResearchBench（**PSU/OSU/UCSC〔Qingyun Wu/Huazheng Wang/Jishen Zhao〕，agent 自建评测反馈——Q6 直接相关，优先深读**）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
+- **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
+
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
 
 ## A. 通用 RSI 方法/框架（harness/自进化框架线）
@@ -74,10 +80,30 @@
 | Embodied Agent Arena（VLM Robot Generalists 实证） | 2610.00854 | 11-04 | up 24 | 具身 arena |
 | Quant-Arena: LLM Agents for Quantitative Trading Research | 2610.30113 | 10-22 | up 6 | 量化研究 arena |
 
-## GitHub 生态热度补充（2026-11-16 扫描）
+## GitHub 生态热度补充（2026-11-16 扫描；2026-11-17 批量入库）
 
-RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）：NeoHorse（⭐1.7k）、Dream-RSI（⭐1.6k）、AntOmniEvo（⭐1.2k，蚂蚁）、RSI-Anything（⭐1.2k）、awesome-rsi（lobehub，⭐1.0k）、RSIAgent（⭐610）、hermit（⭐527）、gear（rsi-gear，⭐464，ICL+Duke 系）、rsi_eval（⭐470）、ScienceBuddy（⭐425）、RSI-Exam（⭐198）——**星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行**。
+RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2026-11-17 业界收集批次①）**：
 
-## 评估优先级（changelog 同步）
+| 项目 | ⭐ | 入库 |
+|---|---|---|
+| Human-Agent-Society/reef（自改进基建枢纽） | 7.8k | **#41 T1**（star 触发器激活） |
+| SoMarkAI/OXR（产品化 RSI 后训练） | 3.8k | **#43 T2**（候选观察席） |
+| TokenRhythm/NeoHorse（agentic post-training TR） | 1.7k | **#40 T2** |
+| zhengkid/Dream-RSI（Google/DeepMind） | 1.6k | **#38 T2**（升级触发器=arXiv/复现） |
+| ant-research/AntOmniEvo（蚂蚁） | 1.2k | **#42 T2** |
+| Gen-Verse/RSI-Anything（世界模型 RSI） | 1.2k | **#44 T2** |
+| lobehub/awesome-rsi（领域地图） | 1.0k | 不编号：分类法与本库 L1-L5 对照可互校，暂记参考源 |
+| AetherLabsAI/RSIAgent | 610 | **#46 T3** |
+| Infini-AI-Lab/hermit | 527 | **#48 T3** |
+| rsi-gear/gear（GEAR，ICL+Duke 系） | 464 | watch 保留（论文 2026-10 preprint，深读后排期） |
+| Danielxu0208/rsi_eval（评测 SDK） | 470 | watch 保留 |
+| Gen-Verse/ScienceBuddy | 425 | **#47 T3** |
+| aiming-lab/RSI-Exam | 198 | **#49 T3** |
+| cocacola-lab/awesome-embodied-rsi | 282 | watch 保留（具身 RSI 专题） |
+| Human-Agent-Society/CORAL | 1.1k | watch 保留（reef 姊妹项目，未读） |
 
-1. **The Trinity**（161 赞，最高热度）→ 2. **CUA-Master**（50）→ 3. **R²Orch**（49）→ 4. **CoEvo-RSI**（46）→ 5. **RSIHub**（44，基础设施型）→ 6. EvalResearchBench（准则 6 相关）→ 其余按热度。
+**判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
+
+## 评估优先级（changelog 同步；2026-11-17 更新）
+
+1. **The Trinity**（161 赞，机构未披露——先定机构归属再定级）→ 2. **EvalResearchBench**（Q6 直接相关）→ 3. **CUA-Master**（50，对自生成经验 RSI 的批评视角）→ 4. **R²Orch**（49）→ 5. **CoEvo-RSI**（46，NUS 系）→ 6. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 其余按热度。
