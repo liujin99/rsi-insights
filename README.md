@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, and deep reads of nine harness/meta-level works (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **74 works tracked** (36 launch seeds + 38 later entries #37–#74 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, deep reads of nine harness/meta-level works (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL), and a second light-evaluation batch of five watch entries (A-RSI / Self-HPO / HarnessPro / Video-Gen×Harness / PhysLoop)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -109,7 +109,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 38 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74 前五热度〕），共 74 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -172,6 +172,9 @@ rsi-insights/
 | 66 | **ModularRSI** | Beihang+Manchester+IQuest+M-A-P+Langboat+Hohai（六机构 15 人） | arXiv 2609.14857（2026.09） | **两级信用分配+benchmark-disjoint 协议**（2,000 任务人工构建+no-op 反 hack+diff 泛化审查门）；**受控负结果：修改空间↑→可迁移性↓**（joint 44.19/whole 46.44＜baseline 47.57＜模块化 52.43）——约束产生可迁移性；**子域唯一跨演化域+跨基座双迁移**（+2~5%）；附录 A 十一系统对比表=子域底册——**升 [高价值]（深读）** |
 | 67 | **Adaptive Auto-Harness** | Emory+Amazon+PSU+UIUC+NEU（10 人；A-Evolve 同班前作） | arXiv 2606.01770（2026.06，v3 11） | **首个开放任务流部署研究**（预测市场 22.2→80.9%、CTF 37.2→50.2，同一 Sonnet）：五种前代演化器同接口对比+**工件法证指纹**（harness 进化"物种分化"首次表格化）+**漂移才是杀手**（冻结 vs 持续重放：漂移越大落后越多）——"不进化不只是不涨，是贬值"（Q1 收敛侧最干净实证；深读） |
 | 68 | **Harness Continual Learning** | 南京大学软件新技术国重+UOW（CL 社区入场） | arXiv 2608.19013（2026.08） | **CL 形式化平移到 harness 层**：四组件版本化状态+受保护进化（提案/三门提交/锚点集=纯 harness 层 replay）——**首次定量测 harness-level forgetting 且单旋钮可控**（两变体只差 ε：62.98/10.94% vs 61.74/2.64%）；**Opt-HCL：强模型只做候选生成 +10.65 且延迟不变**（"经持久 harness 蒸馏、在线不用"）；与 #67 构成收敛侧对偶（不进化=贬值/乱进化=破坏）；⚠️ 与 AAH 表内 "Continual"（Karten et al.，Chi Jin 组）**撞名双作，引用带 arXiv ID**（深读） |
+| 71 | **A-RSI** | Trento 系+小米（Jian Luan 同 #65；推断待核） | arXiv 2610.38568（2026.10） | 自改进**时间轴问题单独成轴**：只看训练日志判定学习信号衰退并刷新任务池（无需验证/测试分数）——「何时换燃料」与 #60「何时换策略」同构=**供给侧时间轴三件套**；零数据 11 基准 57.77→61.05 |
+| 72 | **Self-HPO** | Microsoft Research 系 9 人（Jianfeng Gao 组；推断待核） | arXiv 2610.22791（2026.10） | **harness-policy 交替共进化**（policy 当自己的 harness 提议者；hard tasks 构成下一轮 harness 搜索集）：**57.8→64.8（+7.0）OOD 保持=共进化轴最大单读数**；**联合增益＞个体增益之和（超可加性首次明示）**；强模型作外部 proposer 再加成=强提议者/弱执行者第三例——**[高价值]** |
+| 74 | **HarnessPro** | 清华 THUDM（Jie Tang 组） | arXiv 2610.26770（2026.10） | **成本轴进入目标函数**：性能-成本 Pareto 三档 harness（lite/medium/heavy 按部署预算取用）；对 RHO（同一作前作）**+2.0pp 且成本 −26.1% 双轴同向**；label-free（LLM 生成测试）=准则6 新高危面；子域第十轴 |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
@@ -192,6 +195,8 @@ rsi-insights/
 | 56 | **On-Policy Self-Training** | Google+Ulm University | arXiv 2610.32770（2026.10） | **[有意思]** 免数据自蒸馏极简配方：粗主题描述→自生成 QA+特权推理演示当蒸馏信号（E2B MMLU +10.2）——开放域无执行器时的软验证变通（连 #16） |
 | 58 | **Trustworthy RSI 综述** | 人大高瓴人工智能学院 | arXiv 2610.35193（2026.10） | **[有意思]** 可信 RSI 风险分类：评估缺陷/能力退化/合规弱化/工件污染持续/**机制变更使验证失效**——与本库准则6 同频的治理线梳理（连 #30 互补） |
 | 69 | **HSI（Hierarchical Self-Improvement）** | 单作者（Tailin Zhou，无机构标注） | arXiv 2608.08466（2026.08） | **[有意思]** 任务族专属可热插拔 harness（Trinity 的 per-task-family 引文）——与 #50 构成正反读：任务族分 harness vs 能力分 harness（#50 表3 受控显示后者更优）；单作者无机构降档 T3 |
+| 70 | **Video Gen×Agent Harness** | NUS Show Lab 系 21 人（推断待核） | arXiv 2610.40191（2026.10，report） | **「harness」概念扩散到视频生成域**的立场报告：RSI 五层分解（输出/harness/生成器/评测器/流程）与我库分层跨域同构=概念成熟扩散信号；游戏引擎维护世界状态+视频模型渲染的混合世界模型——[有意思] |
+| 73 | **PhysLoop** | HKU MMLab 系 14 人（推断待核） | arXiv 2611.16748（2026.11） | 统一 harness 把 **LLM 物理知识蒸馏成视频模型训练燃料**（生成/选择/纠正三环节引导约束）=燃料假说的跨模态版本（连 #52 混合闭环）；100K 视频+两评测集开源+Physics-IQ Verified 外部验证——[有意思] |
 
 ### 第四梯队：轴外谱系参照
 
