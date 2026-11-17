@@ -6,8 +6,8 @@
 
 ## 评估进度（2026-11-17 更新）
 
-- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；**EvalResearchBench→#51（T2 [高价值]，2026-11-17 深读入库：Q6 评估环首把尺子，深读文档已建）**；**CUA-Master→#52（T2 [高价值]，2026-11-17：Q1 收敛侧受控对照——self-policy 增益有限，开放世界注入续航）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
-- **已读摘要、暂留 watch**：R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
+- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；**EvalResearchBench→#51（T2 [高价值]，2026-11-17 深读入库：Q6 评估环首把尺子，深读文档已建）**；**CUA-Master→#52（T2 [高价值]，2026-11-17：Q1 收敛侧受控对照——self-policy 增益有限，开放世界注入续航）**；**R²Orch→#53（T2 [高价值]，2026-11-17：advantage collapse 命名+零技能评测纪律）/ CoEvo-RSI→#54（T2，2026-11-17：brain-body mismatch 命名+TIMR）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
+- **已读摘要、暂留 watch（轻评估批次，2026-11-17 排队）**：On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
 - **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
 
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
@@ -19,9 +19,9 @@
 | The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents | 2610.36077 | 10-28 | **up 161** | **已入库 #50（T2，2026-11-17）**：能力树+Real2Sim2Real+harness 树进化；开放式匿名（NUS 生态），环境/产物/Router 未开源——升级触发器=开源兑现/venue/⭐≥1k/复现 |
 | Video Generation Meets Agent Harness: Agentic Video Generation, World Modeling and RSI | 2610.40191 | 11-03 | up 77 | "harness"概念扩散到视频生成域 |
 | A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement | 2610.38568 | 10-30 | up 67 | 零数据多模态自改进 |
-| R²Orch: RSI for Agent Orchestration via Self-Play within a Skill-Internalization Loop | 2610.22740 | 11-02 | up 49 | 编排层 self-play + 技能内化（连 L1/L3） |
+| R²Orch: RSI for Agent Orchestration via Self-Play within a Skill-Internalization Loop | 2610.22740 | 11-02 | up 49 | **已入库 #53（T2 [高价值]，2026-11-17）**：CUHK-SZ 系——Recursive Learnability+Skill Withdrawal+advantage collapse 命名，12/12 榜+零技能稳健 |
 | Self-Evolving Coding Agents via Harness-Policy Optimization | 2610.22791 | 10-20 | up 48 | 编码 agent harness 策略优化 |
-| CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow? | 2610.25078 | 10-21 | up 46 | harness 进化×模型换代交互（连 GEAR 线） |
+| CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow? | 2610.25078 | 10-21 | up 46 | **已入库 #54（T2，2026-11-17）**：NUS 系——brain-body mismatch 命名+TIMR 诊断+双向历史继承；9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报窄证据） |
 | RSIHub: A Composable Framework for Agent-Evolution Methods | 2610.32253 | 10-26 | up 44 | 可组合框架——基础设施型工作 |
 | HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization | 2610.26770 | 10-20 | up 31 | 性能-成本 Pareto 权衡进 harness 进化 |
 | On-Policy Self-Training: Data-Free Self-Improvement in LLMs | 2610.32770 | 10-26 | up 31 | L1 层免数据线（连 #16 Absolute Zero） |
@@ -104,6 +104,6 @@ RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2
 
 **判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
 
-## 评估优先级（changelog 同步；2026-11-17 四次更新）
+## 评估优先级（changelog 同步；2026-11-17 五次更新）
 
-1. **R²Orch**（49，编排层 self-play+技能内化——CUA-Master 完成后顺移至最高）→ 2. **CoEvo-RSI**（46，NUS 系）→ 3. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 4. The Trinity 深读+开源兑现追踪（总表待办⑩）→ 5. EvalResearchBench 遗留：repo 复算核验+第二届追踪 → 6. CUA-Master 遗留：OSWorld 第三方复算+self-policy 对照定量数字核读（总表待办⑪）→ 其余按热度。
+1. **Dream-RSI/InfraRSI 深读**（总表待办①，对用户 3B 训练梯子直接参照——重活）→ 2. **轻评估批次**：Recursa（阿里）/On-Policy Self-Training/Continual Learning Exam/Trustworthy RSI 综述（总表待办②）→ 3. The Trinity 深读+开源兑现追踪（总表待办⑨）→ 4. EvalResearchBench 遗留：repo 复算核验+第二届追踪（待办⑩）→ 5. CUA-Master 遗留：OSWorld 第三方复算+self-policy 对照定量核读（待办⑪）→ 其余按热度。
