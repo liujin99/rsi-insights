@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result and the harness-subdomain sweep), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, and deep reads of the harness trio (SPADE / HarnessX / JIT-Agent)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -45,6 +45,9 @@ rsi-insights/
 │   ├── Dream-RSI_深度分析.md            # #38 深读文档（2026-11-17）
 │   ├── InfraRSI_深度分析.md             # #39 深读文档（2026-11-17）
 │   ├── TheTrinity_深度分析.md           # #50 深读文档（2026-11-17）
+│   ├── SPADE_深度分析.md                # #63 深读文档（2026-11-17，深读批次③）
+│   ├── HarnessX_深度分析.md             # #65 深读文档（2026-11-17，深读批次③）
+│   ├── JIT-Agent_深度分析.md            # #64 深读文档（2026-11-17，深读批次③）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -100,7 +103,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③〔#63/#64/#65 harness 三连〕），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -157,9 +160,9 @@ rsi-insights/
 | 60 | **EvoX** | Berkeley 系（Sky 系谱签名） | arXiv 2602.23413（2026.02） | **搜索策略本身也要进化**（meta-evolution）——#38 Dream-RSI 所引"在线元优化"代表，与 #38 构成"在线元优化 vs 离线回放"直接对照对 |
 | 61 | **SkyDiscover** | Berkeley 全栈（Cemri/Zaharia/Stoica/Dimakis 等） | **ACM CAIS 2026**（短文） | "自适应发现基建"框架——Berkeley 把发现系统当基建层做（Sky 命名系谱）；本批唯一有正式 venue 的工作 |
 | 62 | **SimpleTES** | Ye/Lin 系（MIT/Harvard，AI Scientist 作者群） | arXiv 2604.19341（2026.04） | "评测驱动的结构化 scaling"——**#38 的 162× 对照锚**（GPT-OSS-120B+51,200 代强基线）；"scaling 要结构化到评测信号能复利"连 Q1 |
-| 63 | **SPADE** | 多机构联队（UT Austin/OpenAI/KAIST 等签名，待核） | arXiv 2608.19197（2026.08） | **一个 LLM 分饰两角的自博弈**：Designer 写可执行训练环境（含验证代码）、Agent 学——**privileged-hint regret**="撤走/特权对照"信号簇第四例；环境造在能力边缘 |
-| 64 | **JIT-Agent** | NUS 系（Guibin Zhang=#54 同生态） | arXiv 2608.25593（2026.08） | **harness 生成做成一个训练出来的模型**（四模块协议工件，即时合成+修复+档案蒸馏自进化）——DeepSeek-V4-Flash+JIT 超 GPT-5.6、GLM-5.2 +20.2；harness 生产第三范式（vs #50 能力树/#65 代数组装） |
-| 65 | **HarnessX** | 疑似腾讯系（Jian Luan/Kun Shao 签名，待核） | arXiv 2606.14249（2026.06） | 类型化原语+**替换代数**组装 harness+AEGIS 进化引擎，**闭环 harness-model loop（轨迹→harness 更新+模型训练信号）**="L3 回流 L1"第三个自我报名（连 #40/#50） |
+| 63 | **SPADE** | 九机构 19 人（UW/Stanford/NEU/CMU/MIT/NUS/SNU/Stevens/UChicago） | arXiv 2608.19197（2026.08） | **[高价值]**（深读）**一个 LLM 分饰两角的自博弈**：Designer 写可执行训练环境、Agent 学，**hint-based regret 训 Designer**——8 held-out 基准 30B-A3B **+8.1 且增益随规模扩大**；**适应性＞生成器强度**（GPT-5.5 静态池≈自固定池＜自适应）、**无信号自生成有害**（40.5＜50.2）；regret 唯一定理化但小模型变负（规模下限）；corpus grounding 防坍缩+learnable share+**环境预算 $10 亿/年**产业读数 |
+| 64 | **JIT-Agent** | NUS+EverMind AI+NTU（Guibin Zhang=#54 同生态） | arXiv 2608.25593（2026.08） | **（深读）harness 生成做成训练模型**（AOT/JIT 范式区分+四模块协议+三段训练含 Evo-GDPO）——**18/18 配对全升+24/24 跨六主干**、DeepSearchQA 85.1 超 GPT-5.6；**6/6 token/成本全场最低**（"买效率不买轨迹长度"）；生成器/执行器解耦两级栈=meta 成本一次性摊销；⚠️ 训练-评测分离度未明说 |
+| 65 | **HarnessX** | **小米 EV** Darwin Agent Team（非腾讯，已核） | arXiv 2606.14249（2026.06） | **（深读）类型化处理器+替换代数组装+AEGIS 四阶段**（操作镜像：三 RL 病理↔三防御）——**L3→L1 回流真做了**：cross-harness GRPO 共进化 **+4.7%** 跨过 scaffolding ceiling=回流轴第一读数；**两个天花板命名**（#54 brain-body 正面表述）；逆缩放（最弱 agent +44.0）；⚠️ 主表全 on-set（论文自认）——方法学 T1 级/读数 T3 级 |
 | 66 | **ModularRSI** | Manchester+中国机构（分工待核） | arXiv 2609.14857（2026.09） | 可泛化 harness 进化的**评测卫生学**：benchmark-disjoint+对照式缺陷归因+五功能模块受限域独立进化——**"在评测集上演化=基准特定适应"=准则6 的 harness 层表述** |
 | 67 | **Adaptive Auto-Harness** | Northeastern（Dakuo Wang）系 | arXiv 2606.01770（2026.06，v3 11） | 开放任务流持续自改进（预测市场 22.2→80.9%）+**"工件累积不保证持续增益、可迁移知识随分布变化贬值"**=Q1 收敛侧新证据——持续进化靠修订累积知识保增益 |
 | 68 | **Harness Continual Learning** | 中国机构（Yang Gao/Lei Wang 签名，待核） | arXiv 2608.19013（2026.08） | **命名 harness-level forgetting**（harness 更新破坏先前可靠行为=参数层灾难性遗忘的 harness 镜像）+三关提交守护进化（改进/历史保持/有效性）——准则6 的 harness 层等价物 |
