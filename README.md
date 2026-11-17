@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **74 works tracked** (36 launch seeds + 38 later entries #37–#74 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, deep reads of nine harness/meta-level works (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL), and a second light-evaluation batch of five watch entries (A-RSI / Self-HPO / HarnessPro / Video-Gen×Harness / PhysLoop)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **81 works tracked** (36 launch seeds + 45 later entries #37–#81 incl. the industry batch, the Anthropic zeta result, the harness-subdomain sweep with nine deep reads (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL), and rolling light-evaluation batches of 21 watch entries (#50-#58, #70-#74 and #75-#81 — the latter adding Épi, Criteria-Exposure, EmoReward, MoLRSI, VibeGame, Physical-AI-RSI and PhysRSI-eval)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -109,7 +109,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 38 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74 前五热度〕），共 74 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 45 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74〕/ 轻评估批次③〔#75-#81，up≥20 七条：Épi/Criteria Exposure/EmoReward/MoLRSI/VibeGame/Physical AI RSI/PhysRSI-eval〕），共 81 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -175,6 +175,10 @@ rsi-insights/
 | 71 | **A-RSI** | Trento 系+小米（Jian Luan 同 #65；推断待核） | arXiv 2610.38568（2026.10） | 自改进**时间轴问题单独成轴**：只看训练日志判定学习信号衰退并刷新任务池（无需验证/测试分数）——「何时换燃料」与 #60「何时换策略」同构=**供给侧时间轴三件套**；零数据 11 基准 57.77→61.05 |
 | 72 | **Self-HPO** | Microsoft Research 系 9 人（Jianfeng Gao 组；推断待核） | arXiv 2610.22791（2026.10） | **harness-policy 交替共进化**（policy 当自己的 harness 提议者；hard tasks 构成下一轮 harness 搜索集）：**57.8→64.8（+7.0）OOD 保持=共进化轴最大单读数**；**联合增益＞个体增益之和（超可加性首次明示）**；强模型作外部 proposer 再加成=强提议者/弱执行者第三例——**[高价值]** |
 | 74 | **HarnessPro** | 清华 THUDM（Jie Tang 组） | arXiv 2610.26770（2026.10） | **成本轴进入目标函数**：性能-成本 Pareto 三档 harness（lite/medium/heavy 按部署预算取用）；对 RHO（同一作前作）**+2.0pp 且成本 −26.1% 双轴同向**；label-free（LLM 生成测试）=准则6 新高危面；子域第十轴 |
+| 76 | **EmoReward** | UT Austin+腾讯+HKUST 系 22 人（推断待核） | arXiv 2611.06518（2026.11） | **reward traces 蒸馏证据可靠性**：实例门控（相位/人脸置信/冲突/微妙度）+RewardMemory 按情绪 regime 定**有界乘数**（不更新奖励模型）=**训练轨迹元信号奖励侧成员**（#71 燃料侧/#60 策略侧之后的第三侧）；反 reward hacking 靠"信哪个证据、信多少"——与 #63 hint regret 同构 |
+| 78 | **Épi** | MIT+ND+MSR+OSU+CMU+AI2 大联盟 19 人（推断待核） | arXiv 2610.24944（2026.10） | **跨会话持久研究 agent**（持久历史+分层记忆+分支独立评审+**固定验证器**）：**120 项记录**（Feigenbaum 四次元 3.6×10⁶× 收窄/**Cohn-Elkies d10/11 不尖锐对偶证书**/Tuza 猜想部分证明）；Épi-turbo 同底座**超 Codex 5.4% 且成本 64%**——L4 线+部署现实性+成本读数——**[高价值]** |
+| 79 | **Criteria Exposure（Task-or-Verifier）** | HKU MMLab 系 13 人（Daquan Zhou 线；推断待核） | arXiv 2611.08318（2026.11） | **CE 命名+受控负结果**：判据暴露的 agent 在**判据微扰（指令不变）下优势消失+跨任务迁移差=学的是验证器不是任务**；验证器扰动测试新协议+instruction-faithful criteria 修复——特权暴露簇第五例（#63/#39/#51/#66 后具身域落地）——**[高价值]** |
+| 80 | **MoLRSI** | MIT 系 19 人（Hacohen/Collins/Wengong Jin；推断待核） | arXiv 2610.39714（2026.11） | 分子发现 RSI **湿实验验证**：抗生素 hit rate **15.9% vs 专家流程 8.7%**（同数据同库）；肽-MHC 8 个验证命中 **vs Claude Science 完全失败**（强声明待深读核）；co-scientist 谱系（#23）实验证据级条目 |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
@@ -197,6 +201,9 @@ rsi-insights/
 | 69 | **HSI（Hierarchical Self-Improvement）** | 单作者（Tailin Zhou，无机构标注） | arXiv 2608.08466（2026.08） | **[有意思]** 任务族专属可热插拔 harness（Trinity 的 per-task-family 引文）——与 #50 构成正反读：任务族分 harness vs 能力分 harness（#50 表3 受控显示后者更优）；单作者无机构降档 T3 |
 | 70 | **Video Gen×Agent Harness** | NUS Show Lab 系 21 人（推断待核） | arXiv 2610.40191（2026.10，report） | **「harness」概念扩散到视频生成域**的立场报告：RSI 五层分解（输出/harness/生成器/评测器/流程）与我库分层跨域同构=概念成熟扩散信号；游戏引擎维护世界状态+视频模型渲染的混合世界模型——[有意思] |
 | 73 | **PhysLoop** | HKU MMLab 系 14 人（推断待核） | arXiv 2611.16748（2026.11） | 统一 harness 把 **LLM 物理知识蒸馏成视频模型训练燃料**（生成/选择/纠正三环节引导约束）=燃料假说的跨模态版本（连 #52 混合闭环）；100K 视频+两评测集开源+Physics-IQ Verified 外部验证——[有意思] |
+| 75 | **VibeGame** | NTU S-Lab 系 16 人（Ziwei Liu 牵头；推断待核） | arXiv 2610.33106（2026.10） | 游戏域 L3：AI-native 引擎（schema 校验状态+帧同步控制）+8 agent 实现/评审分离+**training-free 自进化**（验收项目蒸馏为骨架/模块/协作契约=经验抽象最弱形态变体）；同底座 P2G 超一众 harness（含 GPT-6.1-Sol 配置）——[有意思] |
+| 77 | **Physical AI RSI（立场文）** | HKUST-GZ 系 12 人（推断待核） | arXiv 2610.29677（2026.10，position） | **增益前传四条件**（反馈对准剩余学习需求/接收件能用/跨任务硬件存活/安全可负担）+**诚实负结果「物理研究尚未隔离出可归因递归的增益」**（Q1 域覆盖负读数；与复利四机制物理域对偶）——[有意思] |
+| 81 | **Physical RSI Scaling（PhysRSI-eval）** | PKU/BIGAI 系 11 人（He Wang/Li Yi 线；推断待核） | arXiv 2610.26848（2026.10） | **五轴改进度量**（首试/效率/成功/预算/失败中改进=Q1"怎么改进"测量）+**木桶假说命名**+早期物理反馈预测后期进展（廉价早期信号家族第三成员）；工作区干预：场景适应与可复用经验可共存——[有意思] |
 
 ### 第四梯队：轴外谱系参照
 
