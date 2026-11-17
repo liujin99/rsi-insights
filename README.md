@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, and deep reads of seven harness/meta-level works (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result, the harness-subdomain sweep, and deep reads of nine harness/meta-level works (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -52,6 +52,8 @@ rsi-insights/
 │   ├── SimpleTES_深度分析.md            # #62 深读文档（2026-11-17，深读批次④）
 │   ├── AAH_深度分析.md                  # #67 深读文档（2026-11-17，深读批次⑤）
 │   ├── SkyDiscover_深度分析.md          # #61 深读文档（2026-11-17，深读批次⑤）
+│   ├── ModularRSI_深度分析.md           # #66 深读文档（2026-11-17，深读批次⑥）
+│   ├── HCL_深度分析.md                  # #68 深读文档（2026-11-17，深读批次⑥）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -107,7 +109,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤〔#63/#64/#65/#60/#62/#67/#61 七连〕），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -167,9 +169,9 @@ rsi-insights/
 | 63 | **SPADE** | 九机构 19 人（UW/Stanford/NEU/CMU/MIT/NUS/SNU/Stevens/UChicago） | arXiv 2608.19197（2026.08） | **[高价值]**（深读）**一个 LLM 分饰两角的自博弈**：Designer 写可执行训练环境、Agent 学，**hint-based regret 训 Designer**——8 held-out 基准 30B-A3B **+8.1 且增益随规模扩大**；**适应性＞生成器强度**（GPT-5.5 静态池≈自固定池＜自适应）、**无信号自生成有害**（40.5＜50.2）；regret 唯一定理化但小模型变负（规模下限）；corpus grounding 防坍缩+learnable share+**环境预算 $10 亿/年**产业读数 |
 | 64 | **JIT-Agent** | NUS+EverMind AI+NTU（Guibin Zhang=#54 同生态） | arXiv 2608.25593（2026.08） | **（深读）harness 生成做成训练模型**（AOT/JIT 范式区分+四模块协议+三段训练含 Evo-GDPO）——**18/18 配对全升+24/24 跨六主干**、DeepSearchQA 85.1 超 GPT-5.6；**6/6 token/成本全场最低**（"买效率不买轨迹长度"）；生成器/执行器解耦两级栈=meta 成本一次性摊销；⚠️ 训练-评测分离度未明说 |
 | 65 | **HarnessX** | **小米 EV** Darwin Agent Team（非腾讯，已核） | arXiv 2606.14249（2026.06） | **（深读）类型化处理器+替换代数组装+AEGIS 四阶段**（操作镜像：三 RL 病理↔三防御）——**L3→L1 回流真做了**：cross-harness GRPO 共进化 **+4.7%** 跨过 scaffolding ceiling=回流轴第一读数；**两个天花板命名**（#54 brain-body 正面表述）；逆缩放（最弱 agent +44.0）；⚠️ 主表全 on-set（论文自认）——方法学 T1 级/读数 T3 级 |
-| 66 | **ModularRSI** | Manchester+中国机构（分工待核） | arXiv 2609.14857（2026.09） | 可泛化 harness 进化的**评测卫生学**：benchmark-disjoint+对照式缺陷归因+五功能模块受限域独立进化——**"在评测集上演化=基准特定适应"=准则6 的 harness 层表述** |
+| 66 | **ModularRSI** | Beihang+Manchester+IQuest+M-A-P+Langboat+Hohai（六机构 15 人） | arXiv 2609.14857（2026.09） | **两级信用分配+benchmark-disjoint 协议**（2,000 任务人工构建+no-op 反 hack+diff 泛化审查门）；**受控负结果：修改空间↑→可迁移性↓**（joint 44.19/whole 46.44＜baseline 47.57＜模块化 52.43）——约束产生可迁移性；**子域唯一跨演化域+跨基座双迁移**（+2~5%）；附录 A 十一系统对比表=子域底册——**升 [高价值]（深读）** |
 | 67 | **Adaptive Auto-Harness** | Emory+Amazon+PSU+UIUC+NEU（10 人；A-Evolve 同班前作） | arXiv 2606.01770（2026.06，v3 11） | **首个开放任务流部署研究**（预测市场 22.2→80.9%、CTF 37.2→50.2，同一 Sonnet）：五种前代演化器同接口对比+**工件法证指纹**（harness 进化"物种分化"首次表格化）+**漂移才是杀手**（冻结 vs 持续重放：漂移越大落后越多）——"不进化不只是不涨，是贬值"（Q1 收敛侧最干净实证；深读） |
-| 68 | **Harness Continual Learning** | 中国机构（Yang Gao/Lei Wang 签名，待核） | arXiv 2608.19013（2026.08） | **命名 harness-level forgetting**（harness 更新破坏先前可靠行为=参数层灾难性遗忘的 harness 镜像）+三关提交守护进化（改进/历史保持/有效性）——准则6 的 harness 层等价物；⚠️ 与 AAH 表内 "Continual"（Karten et al.，Chi Jin 组）**撞名双作，引用带 arXiv ID** |
+| 68 | **Harness Continual Learning** | 南京大学软件新技术国重+UOW（CL 社区入场） | arXiv 2608.19013（2026.08） | **CL 形式化平移到 harness 层**：四组件版本化状态+受保护进化（提案/三门提交/锚点集=纯 harness 层 replay）——**首次定量测 harness-level forgetting 且单旋钮可控**（两变体只差 ε：62.98/10.94% vs 61.74/2.64%）；**Opt-HCL：强模型只做候选生成 +10.65 且延迟不变**（"经持久 harness 蒸馏、在线不用"）；与 #67 构成收敛侧对偶（不进化=贬值/乱进化=破坏）；⚠️ 与 AAH 表内 "Continual"（Karten et al.，Chi Jin 组）**撞名双作，引用带 arXiv ID**（深读） |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
