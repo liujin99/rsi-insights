@@ -56,6 +56,7 @@ rsi-insights/
 │   ├── HCL_深度分析.md                  # #68 深读文档（2026-11-17，深读批次⑥）
 │   ├── Self-HPO_深度分析.md            # #72 深读文档（2026-11-17，深读批次⑦）
 │   ├── Épi_深度分析.md                 # #78 深读文档（2026-11-17，深读批次⑧）
+│   ├── CriteriaExposure_深度分析.md    # #79 深读文档（2026-11-17，深读批次⑨）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -179,7 +180,7 @@ rsi-insights/
 | 74 | **HarnessPro** | 清华 THUDM（Jie Tang 组） | arXiv 2610.26770（2026.10） | **成本轴进入目标函数**：性能-成本 Pareto 三档 harness（lite/medium/heavy 按部署预算取用）；对 RHO（同一作前作）**+2.0pp 且成本 −26.1% 双轴同向**；label-free（LLM 生成测试）=准则6 新高危面；子域第十轴 |
 | 76 | **EmoReward** | UT Austin+腾讯+HKUST 系 22 人（推断待核） | arXiv 2611.06518（2026.11） | **reward traces 蒸馏证据可靠性**：实例门控（相位/人脸置信/冲突/微妙度）+RewardMemory 按情绪 regime 定**有界乘数**（不更新奖励模型）=**训练轨迹元信号奖励侧成员**（#71 燃料侧/#60 策略侧之后的第三侧）；反 reward hacking 靠"信哪个证据、信多少"——与 #63 hint regret 同构 |
 | 78 | **Épi** | **Bake AI（与 #37 同公司，一作同为 Yue Huang）**+MIT+ND+MSR+OSU+CMU+AI2（签名推断） | arXiv 2610.24944（2026.10）+Epi-results | **跨会话持久研究 agent**（固定 ruler+增益地板+分层记忆+独立评审）：**120 项记录**（Feigenbaum 3.6×10⁶×/**CE d10/11 方法不尖锐**/Tuza）；**深读**：turbo +5.4% 全来自速度项、**目标值头对头 18:61 输 Codex**=预算感知早停；97/100 构造记录=爱好者注册表小增量；持久研究 agent 簇 ≥10 新名——**[高价值]** 深读坐实 |
-| 79 | **Criteria Exposure（Task-or-Verifier）** | HKU MMLab 系 13 人（Daquan Zhou 线；推断待核） | arXiv 2611.08318（2026.11） | **CE 命名+受控负结果**：判据暴露的 agent 在**判据微扰（指令不变）下优势消失+跨任务迁移差=学的是验证器不是任务**；验证器扰动测试新协议+instruction-faithful criteria 修复——特权暴露簇第五例（#63/#39/#51/#66 后具身域落地）——**[高价值]** |
+| 79 | **Criteria Exposure（Task-or-Verifier）** | **PKU DAGroup**（Daquan Zhou 现 PKU 非 HKU MMLab——深读修正）13 人+RSIJudge 开源 | arXiv 2611.08318（2026.11） | **CE 命名+受控双负**（深读坐实）：51.6→45.0 vs 27.8→47.2（**优势消失还略反超**）、press_by_number 20/20→**0/20**=纯验证器过拟合；**~1/3 CE 记忆引用判据代码 vs w/o CE 零引用**；判据-指令差距**七型分类学**+faithful 八条改写规则；新任务 CE 反转、跨基准≈零——特权暴露簇第五例（**测验证器可读性本身**）+Q3 第六个廉价诊断——**[高价值]** 深读坐实 |
 | 80 | **MoLRSI** | MIT 系 19 人（Hacohen/Collins/Wengong Jin；推断待核） | arXiv 2610.39714（2026.11） | 分子发现 RSI **湿实验验证**：抗生素 hit rate **15.9% vs 专家流程 8.7%**（同数据同库）；肽-MHC 8 个验证命中 **vs Claude Science 完全失败**（强声明待深读核）；co-scientist 谱系（#23）实验证据级条目 |
 | 82 | **DiscoveryRSI** | PKU/BIGAI 系 26 人（Ling Yang/Zhenfei Yin；+CUHK/MIT 医学线/复旦；推断待核） | arXiv 2610.23839（2026.10） | **假设价值操作化**（可检验假设=证据落地+重大不确定+可行调查+判定标准+替代解释）+假设树进化搜索→**可执行 Harbor 任务**（连 #49 同沙箱）；DFM-Bench 四层研究进度测量；**新颖性外部时间锚：截断后文献对应率 6.3% vs GPT-6 2.5%/Opus 5 2.3%**；三机制递归（假设信用/harness replay/rediscovery）；4.86→5.39 两轮 |
 | 83 | **Build, Don't Play（AutoTavern）** | 南京大学系 2 人（Limin Wang 牵头；推断待核） | arXiv 2610.33845（2026.10） | **「LLM agent 造系统远强于当系统」真机定量**：20 天自建 TavernGym+23 版 TavernAgent，真机天梯 6,000→15,000、**均名次 1.60/80% 第一超服务器前十人类玩家**；自建智能体 91% vs 前沿 LLM 直接游玩 ≤63%、0.03s vs 26s——L1/L3 分工部署级证据；每断言过验证门+真机闭环 |
