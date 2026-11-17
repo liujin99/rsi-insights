@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **58 works tracked** (36 launch seeds + 22 later entries #37–#58 incl. the industry batch and nine watch-evaluated works), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **59 works tracked** (36 launch seeds + 23 later entries #37–#59 incl. the industry batch, nine watch-evaluated works and the Anthropic zeta result), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -18,7 +18,7 @@ Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 |---|---|---|---|
 | **L1 权重层** | 模型参数 | STaR / ReST / Self-Rewarding / Absolute Zero / RSI Arena | 可验证奖励（数学/代码）下已工业可用；自评奖励有漂移风险；agent 自主后训练已有关闭 76% base→Instruct 差距的受控实证（#37） |
 | **L2 上下文层** | prompt 内的推理轨迹 | Self-Refine / Reflexion / self-correction 线 | 有外反馈时有效；纯内在自纠错有受控反例（#03） |
-| **L3 代码/工具层** | agent 自己的脚手架与工具 | Voyager / FunSearch / AlphaEvolve / DGM / Gödel Agent / Dream-RSI / AntOmniEvo / hermit / reef | 最活跃层；AlphaEvolve 已生产部署；**2026H2 工业界集体入场**（Google/DeepMind、华为诺亚×2、蚂蚁、SoMark） |
+| **L3 代码/工具层** | agent 自己的脚手架与工具 | Voyager / FunSearch / AlphaEvolve / DGM / Gödel Agent / Dream-RSI / AntOmniEvo / hermit / reef | 最活跃层；AlphaEvolve 已生产部署；**2026H2 工业界集体入场**（Google/DeepMind、华为诺亚×2、蚂蚁、SoMark、**Anthropic〔#59：研究版 Claude 把 RH 零点下界 41.6%→67.2%，专家实审+形式化验证〕**） |
 | **L4 流程层** | 研究流程本身 | AI Scientist / Agent Laboratory / co-scientist / MLE-bench / RE-Bench / PaperBench | 复现型工程先被吃掉，原创研究尚未触及 |
 | **L5 治理/测量线** | 监督能力与进度标尺 | Weak-to-Strong / Recursive RM / METR / RSI Arena（人评竞技场） | 监督瓶颈是治理正题不是副题；盲评人竞场成为 L1 层的外部验证器新范式 |
 
@@ -42,6 +42,8 @@ rsi-insights/
 │   ├── 论文总表.md                     # 全部条目主表（梯队+标记+机构+Venue+一句话核心）
 │   ├── 关键Takeaway.md                 # [高价值] 家族一句话结论
 │   ├── EvalResearchBench_深度分析.md    # #51 深读文档（首篇；此后深读一篇一档）
+│   ├── Dream-RSI_深度分析.md            # #38 深读文档（2026-11-17）
+│   ├── InfraRSI_深度分析.md             # #39 深读文档（2026-11-17）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -97,7 +99,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 22 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58），共 58 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 23 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39 补深读〕/ Anthropic zeta #59），共 59 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -136,8 +138,8 @@ rsi-insights/
 | 22 | **FunSearch** | DeepMind | **Nature 2023.12** | **[高价值]** LLM 程序搜索发现 cap set 新下界——"程序空间搜索>直接答案搜索"的 Nature 级验证（AlphaEvolve 直系前身）；⚠️ 出窗，机制层豁免 |
 | 23 | Towards an AI co-scientist | Google | arXiv 2025.02 | 多 agent 假设生成系统，部分假设获合作实验室湿实验验证——研究流程层首个工业级系统；验证深度有争议（待核） |
 | 24 | ReST: Reinforced Self-Training | DeepMind | arXiv 2023.07 | 自生成→过滤→再训的迭代自训练框架——STaR 工业化版；⚠️ 出窗，机制层注记 |
-| 38 | **Dream-RSI** | **Google+Google DeepMind**+UMD+UVA | 仓库论文 36 页（2026.09，arXiv 即出）+1.6k⭐ | **[高价值]** 把"发现历史"构造成回放模拟器，在模拟器里 dreaming 改进探索策略（免在线评估的低成本元策略优化）——AlphaEvolve 谱系升级：**头部厂商对"L3=RSI 主战场"判断的直接确认**；域=算法工程/数学优化/GPU kernel |
-| 39 | **InfraRSI** | 华为诺亚方舟系（Yunhe Wang/Kai Han/Guohao Dai 等，待核） | arXiv 2611.11558（2026.11.10） | **[高价值]** RSI 打分布式 LLM 训练基建（launch 设置/算子 kernel/通信调度联合改写，OOM/编译冲突/测量抖动为约束）——训练基建 RSI 化的厂商侧第二证（连 #05 判断） |
+| 38 | **Dream-RSI** | **Google+Google DeepMind**+UMD+UVA | 仓库论文 36 页（2026.09，arXiv 截至 11-17 未挂）+1.6k⭐ | **[高价值]** 把"发现历史"构造成回放模拟器，在模拟器里 dreaming 改进探索策略（免在线评估的低成本元策略优化）——AlphaEvolve 谱系升级：**头部厂商对"L3=RSI 主战场"判断的直接确认**；域=算法工程/数学优化/GPU kernel。**深读**：受控对照**回放模拟器>语义指导**（Q1 经验复用方式首条读数）、元级反馈成本降 1.7×–162×；文档已建 |
+| 39 | **InfraRSI** | 华为诺亚方舟系（Yunhe Wang 诺亚锚点+Guohao Dai/Yu Wang 清华 HPC 签名；TokenRhythm 发布=与 #40 同 org） | arXiv 2611.11558（2026.11.08）+可安装真系统（91⭐） | **[高价值]** RSI 打分布式 LLM 训练基建（launch/kernel/通信调度联合改写，OOM/编译冲突/测量抖动为约束）——训练基建 RSI 化厂商侧第二证。**深读**：**验证工程范本**（五层 16 不变式+1,212 执行复审 33% 拒绝率）、**LLM 先验与实测负相关** r∈[−0.49,−0.06]（逆共识探测入 Q3）、**sign flip 命名**（跨硬件经验变号）、4 负载 geomean 1.83×/MFU 17.4→30.0%；文档已建 |
 | 40 | **NeoHorse-1** | TokenRhythm（+华为诺亚系作者） | arXiv TR 2609.08183（2026.09）+Apache 2.0 权重 4B/9B+1.7k⭐ | **[高价值]** agent 原生模型族：异构模型池+智能路由（记录"能力需求→服务档位"证据流）喂回 agentic post-training——把"路由决策当自改进信号"的厂商开源实现 |
 | 42 | **AntOmniEvo** | 蚂蚁集团（ant-research） | 开源框架 2026.09（1.2k⭐，Apache 2.0） | **[高价值]** 自动进化框架：可调物（skills/提示/工作流/代码）抽象为基因组、coding-agent Proposer 改文件、框架管调度/预算/淘汰——"你定义、框架控制、AI 干活"分工的工业级实现 |
 | 43 | **OXR** | SoMarkAI | 开源模型 2026.10（3.8k⭐，论文未出） | 1.3B 文档解析模型，**后训练用 RSI loop（自称该品类首次）**，三榜第一+速度领先——RSI 进入垂直产品管线的首个公开样本；⚠️ RSI 主张不可审计、论文即触发器；**工业实战候选观察席** |
@@ -150,6 +152,7 @@ rsi-insights/
 | 54 | **CoEvo-RSI** | NUS+A\*STAR+商汤 | arXiv 2610.25078（2026.10）+代码（21⭐）+HF | 命名 **brain–body mismatch**（harness 进化×模型能力失配）+TIMR 廉价诊断；进化档案+双向历史继承（harness 历史×checkpoint 选/合并）——9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报，窄证据） |
 | 55 | **Recursa** | Alibaba Research（Jingren Zhou 系） | arXiv 2611.04035（2026.11） | FM 系统级自改进：新域自适应**不用人类专家/更强老师**——结构化知识仓库（技能+指令+记忆+反思）bootstrap 后递归精炼；与 #52 构成"自经验是否饱和"正反对照线 |
 | 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等 | arXiv 2610.33956（2026.10）+开源基准 | **经验驱动改进首把大规模标尺**（600 级进阶梯+16,125 人工检查项）：17 个前沿配置**反馈修订中位仅 +5.3pp、最好 47.7% 过级、23.3% 全通关**——前沿模型经验复利在真实工作流≈0（Q1/Q4 硬地板读数）；**[高价值]** |
+| 59 | **Claude 黎曼 zeta 零点下界推进** | Anthropic（Conrey/Goldston 外部实审） | anthropic.com/research/riemann-zeta（2026.08） | **[高价值]** 未公开研究版 Claude 攻 RH 未成，但把**满足 RH 的零点比例下界 41.6%→67.2%**——专家实审+形式化可验证证明；Anthropic 线入场 L3 发现层首例（准则6"第三种满足方式"：重大发现先于方法论公开）；⚠️ 模型/方法/代码全未公开 |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
