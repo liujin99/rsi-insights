@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **54 works tracked** (36 launch seeds + 18 later entries #37–#54 incl. the industry batch and four watch-evaluated works), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **58 works tracked** (36 launch seeds + 22 later entries #37–#58 incl. the industry batch and nine watch-evaluated works), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -97,7 +97,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 18 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54），共 54 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 22 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58），共 58 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -148,6 +148,8 @@ rsi-insights/
 | 52 | **CUA-Master** | MMLab CUHK+THU+HKUST(GZ)+京东探索研究院 | arXiv 2611.03126（2026.11）+代码（128⭐）+HF 权重 27B | 对"自生成经验式 RSI"的正面批评+替代路线：双飞轮（模型弱项引导**开放世界数据**构建→训练）——**self-policy 注释器增益有限 vs 更强注释器持续增益**（Q1 收敛侧受控对照）；27B 四榜自报竞争力（OSWorld Verified 80.2） |
 | 53 | **R²Orch** | CUHK-SZ+复旦+UIUC+清华+NUS | arXiv 2610.22740（2026.10）+代码（49⭐） | 编排层**信号可靠性工程**：Recursive Learnability（撤走技能下度量可学习性，p=0/1 即 advantage collapse）+Skill Withdrawal，命题级理论——12/12 榜全胜+**零技能保持精度**+迁移 6 底座；⚠️ 9B 规模、自报 |
 | 54 | **CoEvo-RSI** | NUS+A\*STAR+商汤 | arXiv 2610.25078（2026.10）+代码（21⭐）+HF | 命名 **brain–body mismatch**（harness 进化×模型能力失配）+TIMR 廉价诊断；进化档案+双向历史继承（harness 历史×checkpoint 选/合并）——9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报，窄证据） |
+| 55 | **Recursa** | Alibaba Research（Jingren Zhou 系） | arXiv 2611.04035（2026.11） | FM 系统级自改进：新域自适应**不用人类专家/更强老师**——结构化知识仓库（技能+指令+记忆+反思）bootstrap 后递归精炼；与 #52 构成"自经验是否饱和"正反对照线 |
+| 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等 | arXiv 2610.33956（2026.10）+开源基准 | **经验驱动改进首把大规模标尺**（600 级进阶梯+16,125 人工检查项）：17 个前沿配置**反馈修订中位仅 +5.3pp、最好 47.7% 过级、23.3% 全通关**——前沿模型经验复利在真实工作流≈0（Q1/Q4 硬地板读数）；**[高价值]** |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
@@ -165,6 +167,8 @@ rsi-insights/
 | 47 | **ScienceBuddy** | Gen-Verse | arXiv 2609.17523（2026.09）+425⭐ | **[有意思]** "Recursive-in-Recursive"交互科学 agent（内环改程序/外环改模型，待深读）+ScienceIDE（PhAI-IDE 4B/9B/72B）——L4 层科学 agent 线 |
 | 48 | **hermit** | Infini-AI-Lab | 开源框架 2026.09（527⭐，v0.2.0） | **[有意思]** harness adapter 框架：可训练外挂 harness（不动原模型原 harness），多进化算法（Meta-Harness/ReHarness/Harness²）——L3 层"插件化自改进"工程化 |
 | 49 | **RSI-Exam** | aiming-lab | 开源基准 2026.08（198⭐，MIT） | **[有意思]** 可执行研究式 RSI 基准：88 任务（35 公开+**53 held-out 防作弊**）——held-out 纪律的正面样本 |
+| 56 | **On-Policy Self-Training** | Google+Ulm University | arXiv 2610.32770（2026.10） | **[有意思]** 免数据自蒸馏极简配方：粗主题描述→自生成 QA+特权推理演示当蒸馏信号（E2B MMLU +10.2）——开放域无执行器时的软验证变通（连 #16） |
+| 58 | **Trustworthy RSI 综述** | 人大高瓴人工智能学院 | arXiv 2610.35193（2026.10） | **[有意思]** 可信 RSI 风险分类：评估缺陷/能力退化/合规弱化/工件污染持续/**机制变更使验证失效**——与本库准则6 同频的治理线梳理（连 #30 互补） |
 
 ### 第四梯队：轴外谱系参照
 

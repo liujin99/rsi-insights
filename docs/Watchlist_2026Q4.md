@@ -6,8 +6,8 @@
 
 ## 评估进度（2026-11-17 更新）
 
-- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；**EvalResearchBench→#51（T2 [高价值]，2026-11-17 深读入库：Q6 评估环首把尺子，深读文档已建）**；**CUA-Master→#52（T2 [高价值]，2026-11-17：Q1 收敛侧受控对照——self-policy 增益有限，开放世界注入续航）**；**R²Orch→#53（T2 [高价值]，2026-11-17：advantage collapse 命名+零技能评测纪律）/ CoEvo-RSI→#54（T2，2026-11-17：brain-body mismatch 命名+TIMR）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
-- **已读摘要、暂留 watch（轻评估批次，2026-11-17 排队）**：On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
+- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；**EvalResearchBench→#51（T2 [高价值]，2026-11-17 深读入库：Q6 评估环首把尺子，深读文档已建）**；**CUA-Master→#52（T2 [高价值]，2026-11-17：Q1 收敛侧受控对照——self-policy 增益有限，开放世界注入续航）**；**R²Orch→#53（T2 [高价值]，2026-11-17：advantage collapse 命名+零技能评测纪律）/ CoEvo-RSI→#54（T2，2026-11-17：brain-body mismatch 命名+TIMR）**；**Recursa→#55（T2）/ On-Policy Self-Training→#56（T3）/ CLE→#57（T2 [高价值]，经验复利地板读数）/ Trustworthy RSI 综述→#58（T3）（轻评估批次，2026-11-17）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
+- **已读摘要、暂留 watch**：（空——摘要级条目已于 2026-11-17 全部评估入库 #50-#58）
 - **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
 
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
@@ -24,9 +24,9 @@
 | CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow? | 2610.25078 | 10-21 | up 46 | **已入库 #54（T2，2026-11-17）**：NUS 系——brain-body mismatch 命名+TIMR 诊断+双向历史继承；9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报窄证据） |
 | RSIHub: A Composable Framework for Agent-Evolution Methods | 2610.32253 | 10-26 | up 44 | 可组合框架——基础设施型工作 |
 | HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization | 2610.26770 | 10-20 | up 31 | 性能-成本 Pareto 权衡进 harness 进化 |
-| On-Policy Self-Training: Data-Free Self-Improvement in LLMs | 2610.32770 | 10-26 | up 31 | L1 层免数据线（连 #16 Absolute Zero） |
+| On-Policy Self-Training: Data-Free Self-Improvement in LLMs | 2610.32770 | 10-26 | up 31 | **已入库 #56（T3 [有意思]，2026-11-17）**：Google+Ulm——免数据自蒸馏极简配方（特权推理当软验证） |
 | InfraRSI: Harnessing RSI for Training Infrastructure | 2611.11558 | 11-10 | up 34 | RSI 改训练基建（连 #05 AlphaEvolve 判断——L3 先行） |
-| Recursa: Toward Recursively Self-Improving Foundation Model Systems | 2611.04035 | 11-04 | up 18 | FM 系统级递归自改进 |
+| Recursa: Toward Recursively Self-Improving Foundation Model Systems | 2611.04035 | 11-04 | up 18 | **已入库 #55（T2，2026-11-17）**：阿里 Jingren Zhou 系——结构化知识仓库自经验路线，与 #52 构成正反对照线 |
 | ECHO: Efficient Causal Self-Recursion | 2610.24766 | 10-20 | up 15 | 因果自递归（理论线） |
 | Self-Improvement with Auxiliary Rewards: Learning from Verified Traces | 2610.41296 | 11-03 | up 10 | verified traces 辅助奖励（连"验证器=执行器"） |
 | Experience-Handoff Reinforcement Learning for RSI | 2611.16409 | 11-13 | up 10 | 经验交接 RL |
@@ -36,7 +36,7 @@
 
 | 标题 | arXiv | 日期 | 热度 | 备注 |
 |---|---|---|---|---|
-| Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning | 2610.33956 | 10-27 | up 35 | 长时程 RSI 基准（连 #20 RE-Bench） |
+| Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning | 2610.33956 | 10-27 | up 35 | **已入库 #57（T2 [高价值]，2026-11-17）**：UCL Jun Wang 系——经验复利首把大规模标尺+硬地板读数（23.3% 全通关） |
 | EvalResearchBench: Can AI Agents Build Their Own Feedback for RSI? | 2610.04184 | 10-23 | up 19 | **已入库 #51（T2 [高价值]，2026-11-17 深读）**：agent 自建评测首标准 benchmark——PA≈75%/CCC≈23/dev≠sealed；深读文档已建，遗留 repo 复算核验+第二届追踪 |
 | DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses | 2610.23839 | 10-19 | up 19 | 假设发现（L4 评估线，连 Q6） |
 | ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains? | 2610.34386 | 10-27 | up 11 | 多域 agent-改-模型 gym（与 #37 同构问题） |
@@ -65,7 +65,7 @@
 
 | 标题 | arXiv | 日期 | 热度 | 备注 |
 |---|---|---|---|---|
-| Trustworthy RSI in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges | 2610.35193 | 10-27 | up 23 | 可信 RSI 综述——L5 治理线，评估时核对与 #30 的重叠 |
+| Trustworthy RSI in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges | 2610.35193 | 10-27 | up 23 | **已入库 #58（T3 [有意思]，2026-11-17）**：人大高瓴——与准则6 同频的风险分类综述 |
 | Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement | 2611.08318 | 11-13 | up 21 | "学任务还是学验证器"——Q1/Q2 直接相关 |
 | Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy | 2610.26848 | 10-20 | up 20 | RSI 能力的 scaling law 观察（Q1 相关） |
 | A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents | 2611.14256 | 11-13 | up 3 | 多模态自进化综述（连 #30 待核版本） |
@@ -104,6 +104,6 @@ RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2
 
 **判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
 
-## 评估优先级（changelog 同步；2026-11-17 五次更新）
+## 评估优先级（changelog 同步；2026-11-17 六次更新——watch 摘要级条目已清零）
 
-1. **Dream-RSI/InfraRSI 深读**（总表待办①，对用户 3B 训练梯子直接参照——重活）→ 2. **轻评估批次**：Recursa（阿里）/On-Policy Self-Training/Continual Learning Exam/Trustworthy RSI 综述（总表待办②）→ 3. The Trinity 深读+开源兑现追踪（总表待办⑨）→ 4. EvalResearchBench 遗留：repo 复算核验+第二届追踪（待办⑩）→ 5. CUA-Master 遗留：OSWorld 第三方复算+self-policy 对照定量核读（待办⑪）→ 其余按热度。
+1. **Dream-RSI/InfraRSI 深读**（总表待办①，对用户 3B 训练梯子直接参照——重活，下一会话主任务）→ 2. The Trinity 深读+开源兑现追踪（总表待办②）→ 3. #57 CLE 后续届读数追踪（总表待办⑪）→ 4. 未读 watch 条目（凭标题段）按热度滚动评估：Video Generation×Agent Harness（up 77）/A-RSI（up 67）/HarnessPro（up 31）等 → 其余。
