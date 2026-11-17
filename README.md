@@ -58,6 +58,7 @@ rsi-insights/
 │   ├── Épi_深度分析.md                 # #78 深读文档（2026-11-17，深读批次⑧）
 │   ├── CriteriaExposure_深度分析.md    # #79 深读文档（2026-11-17，深读批次⑨）
 │   ├── CLE_深度分析.md                  # #57 深读文档（2026-11-17，深读批次⑩）
+│   ├── R2Orch_深度分析.md              # #53 深读文档（2026-11-17，深读批次⑪）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -162,7 +163,7 @@ rsi-insights/
 | 50 | **The Trinity** | 开放式匿名已查实：InfRec+NUS+Xidian+Tongji+UCB+CUHK+HKUST+HKU+上海创新研究院（21 人全披露，通讯 Pengfei Zhou/Odin Zhang/Yang You） | arXiv 2610.36077（2026.10）+MIT 代码（71⭐）+HF Daily #1（up 161） | 冻结底座（Claude Opus 5）harness 进化：任务重组为**能力树**+Real2Sim2Real（世界生成**排除目标任务布局与解法**）+harness 树选择性继承+能力感知路由；**深读**：46 benchmark（28+18）Train 39.1→73.2、迭代 2-4 仍 +9.4/+6.4（Q1 L3 未饱和数据点）、路由逼近 Oracle、真机 0→60%；**防泄漏纪律=论文级范本**（hash 锁定预测账本）；⚠️ 闭源底座+9/28 训练基准自建+核心工件未开源 |
 | 51 | **EvalResearchBench** | OSU/UCSD/UCSC/PSU+AG2 AI（Qingyun Wu=AutoGen 系） | arXiv 2610.04184（2026.10）+代码（5⭐） | **"agent 自建评测"第一个标准 benchmark**：9 前沿模型当 researcher 冻结交付评测器——最优 PA≈75%（天花板 91%）、CCC≈23：排序可复制、水平难复制；**dev 最优≠sealed 最优**（准则6 定量实锤）；人类采样强基线、最低成本者最高 PA；**[高价值]**，深读文档已建 |
 | 52 | **CUA-Master** | MMLab CUHK+THU+HKUST(GZ)+京东探索研究院 | arXiv 2611.03126（2026.11）+代码（128⭐）+HF 权重 27B | 对"自生成经验式 RSI"的正面批评+替代路线：双飞轮（模型弱项引导**开放世界数据**构建→训练）——**self-policy 注释器增益有限 vs 更强注释器持续增益**（Q1 收敛侧受控对照）；27B 四榜自报竞争力（OSWorld Verified 80.2） |
-| 53 | **R²Orch** | CUHK-SZ+复旦+UIUC+清华+NUS | arXiv 2610.22740（2026.10）+代码（49⭐） | 编排层**信号可靠性工程**：Recursive Learnability（撤走技能下度量可学习性，p=0/1 即 advantage collapse）+Skill Withdrawal，命题级理论——12/12 榜全胜+**零技能保持精度**+迁移 6 底座；⚠️ 9B 规模、自报 |
+| 53 | **R²Orch** | CUHK-SZ 5+复旦 2+UIUC+清华+NUS（10 人） | arXiv 2610.22740（2026.10）+代码（50⭐） | 编排层**定理级信号可靠性工程**（深读坐实）：Recursive Learnability ℓ_rec=4p⁻(1−p⁻)〔撤走候选技能的上下文上量，RL-as-inference 推导〕+Skill Withdrawal〔随机化 rollout 组=对照实验，Neyman 估计量+Bayes 决策〕——**12/12 全胜且全部零技能条件下测出**；**Eq 12：成功率=课程×技能混叠=「信号去混叠三连」第三例（#63/#79/#53）**；零技能精度中途反超；**组织>参数**（弱底座增益最大，极差 25.7→6.4）；技能内化循环=L3→L1 回流微缩受控版；9 引理 3 命题+**~106 A100h**——**[高价值]** 深读坐实 |
 | 54 | **CoEvo-RSI** | NUS+A\*STAR+商汤 | arXiv 2610.25078（2026.10）+代码（21⭐）+HF | 命名 **brain–body mismatch**（harness 进化×模型能力失配）+TIMR 廉价诊断；进化档案+双向历史继承（harness 历史×checkpoint 选/合并）——9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报，窄证据） |
 | 55 | **Recursa** | Alibaba Research（Jingren Zhou 系） | arXiv 2611.04035（2026.11） | FM 系统级自改进：新域自适应**不用人类专家/更强老师**——结构化知识仓库（技能+指令+记忆+反思）bootstrap 后递归精炼；与 #52 构成"自经验是否饱和"正反对照线 |
 | 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等+50 领域专家 | arXiv 2610.33956（2026.10）+GitHub+HF CLE-Lite | **经验驱动改进首把大规模标尺**（600 级梯+16,125 检查项+19 状态化应用）；**深读**：最优 47.67%/L5 中位 8.33%/中位 +5.33pp——但**归因缺口**（反馈+修订合并，跨任务知识保持未隔离）+**引用须双口径**（L5 相对 75% vs 绝对 3.33pp）+**主墙 L1→L2（ρ(L1,L5)=0.42）+harness>模型**（Hermes 全胜 OpenClaw 六 backbone）+小模型 judge 96.86% 可行——**[高价值]** 深读坐实 |
