@@ -61,6 +61,7 @@ rsi-insights/
 │   ├── R2Orch_深度分析.md              # #53 深读文档（2026-11-17，深读批次⑪）
 │   ├── CUA-Master_深度分析.md           # #52 深读文档（2026-11-17，深读批次⑫）
 │   ├── AntOmniEvo_深度分析.md          # #42 深读文档·基建审计型（2026-11-17，审计批次⑬）
+│   ├── reef_深度分析.md                 # #41 深读文档·基建审计型（2026-11-17，审计批次⑭）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -134,7 +135,7 @@ rsi-insights/
 | 08 | **Weak-to-Strong Generalization** | OpenAI | ICML 2024（arXiv 2023.12） | **[高价值]** 弱监督者也能让强学生超过自己（部分设置）——监督瓶颈不是硬墙，RSI 治理线奠基；⚠️ 已出窗但议程层仍活跃 |
 | 09 | **Beyond Human Data（ReST-EM 线）** | Google DeepMind | ICLR 2025（待核） | **[高价值]** 自生成数据+二元 verifier 过滤超过人类数据（Gemini 数学）——"可验证奖励下的权重层自改进"工业规模确认；⚠️ 出窗预警（2024.12） |
 | 37 | **RSI Arena: Towards Recursive Self-Improvement with Human Feedback** | Bake AI（+HF/Scale AI 合作；MIT/Stanford/UW 等联署） | arXiv 2610.33624（2026.10）+ COLM 2026 现场 | **[高价值]** 十个前沿模型当训练 agent 自主后训练同一 base，3,129 票盲评：最强关掉 76% base→Instruct 差距；Stage 2 人评反馈再训 8/10 提升——但 benchmark↔偏好脱钩、长度 hack、StrongREJECT 恶化；**重点关注①** |
-| 41 | **reef** | Human-Agent-Society（社区组织） | 开源基建 2026.08-（7.8k⭐/2.5 月） | **[高价值]** 自改进基建枢纽：推理-反馈-学习-版本化交付一条龙，权重训练（Slime/SGLang）与 harness 进化双通、GEPA/SDFT/SDPO/OPD/Meta-Harness 配方齐——准则4 star 触发器激活（2.5 个月 7.8k⭐） |
+| 41 | **reef** | Human-Agent-Society（社区组织） | 开源基建 2026.08-（7,835⭐/740 forks/PyPI 1.6k 月） | **[高价值]·已基建审计（批次⑭，T1 维持·基建型限定）**：配送层主张 12 配方工件级坐实（L1×L3 双路径、每条钉上游 SHA）；**在库复现记录=准则 6 repo 级范本**（TB 噪声级打平且略负也照记+选择器复盘等价）；901 merged PR/2.5 月、测试比 1.2:1、评测基建先行、协议形式化；T1 地位=枢纽+诚实标准（非科学发现，无自有算法 by design） |
 
 ### 第二梯队：高相关（未全达 T1 准入）
 
