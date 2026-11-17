@@ -57,6 +57,7 @@ rsi-insights/
 │   ├── Self-HPO_深度分析.md            # #72 深读文档（2026-11-17，深读批次⑦）
 │   ├── Épi_深度分析.md                 # #78 深读文档（2026-11-17，深读批次⑧）
 │   ├── CriteriaExposure_深度分析.md    # #79 深读文档（2026-11-17，深读批次⑨）
+│   ├── CLE_深度分析.md                  # #57 深读文档（2026-11-17，深读批次⑩）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -164,7 +165,7 @@ rsi-insights/
 | 53 | **R²Orch** | CUHK-SZ+复旦+UIUC+清华+NUS | arXiv 2610.22740（2026.10）+代码（49⭐） | 编排层**信号可靠性工程**：Recursive Learnability（撤走技能下度量可学习性，p=0/1 即 advantage collapse）+Skill Withdrawal，命题级理论——12/12 榜全胜+**零技能保持精度**+迁移 6 底座；⚠️ 9B 规模、自报 |
 | 54 | **CoEvo-RSI** | NUS+A\*STAR+商汤 | arXiv 2610.25078（2026.10）+代码（21⭐）+HF | 命名 **brain–body mismatch**（harness 进化×模型能力失配）+TIMR 廉价诊断；进化档案+双向历史继承（harness 历史×checkpoint 选/合并）——9B 三垂直域超 DeepSeek-V4-Pro/GLM-5.3（自报，窄证据） |
 | 55 | **Recursa** | Alibaba Research（Jingren Zhou 系） | arXiv 2611.04035（2026.11） | FM 系统级自改进：新域自适应**不用人类专家/更强老师**——结构化知识仓库（技能+指令+记忆+反思）bootstrap 后递归精炼；与 #52 构成"自经验是否饱和"正反对照线 |
-| 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等 | arXiv 2610.33956（2026.10）+开源基准 | **经验驱动改进首把大规模标尺**（600 级进阶梯+16,125 人工检查项）：17 个前沿配置**反馈修订中位仅 +5.3pp、最好 47.7% 过级、23.3% 全通关**——前沿模型经验复利在真实工作流≈0（Q1/Q4 硬地板读数）；**[高价值]** |
+| 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等+50 领域专家 | arXiv 2610.33956（2026.10）+GitHub+HF CLE-Lite | **经验驱动改进首把大规模标尺**（600 级梯+16,125 检查项+19 状态化应用）；**深读**：最优 47.67%/L5 中位 8.33%/中位 +5.33pp——但**归因缺口**（反馈+修订合并，跨任务知识保持未隔离）+**引用须双口径**（L5 相对 75% vs 绝对 3.33pp）+**主墙 L1→L2（ρ(L1,L5)=0.42）+harness>模型**（Hermes 全胜 OpenClaw 六 backbone）+小模型 judge 96.86% 可行——**[高价值]** 深读坐实 |
 | 59 | **Claude 黎曼 zeta 零点下界推进** | Anthropic（Conrey/Goldston 外部实审） | anthropic.com/research/riemann-zeta（2026.08） | **[高价值]** 未公开研究版 Claude 攻 RH 未成，但把**满足 RH 的零点比例下界 41.6%→67.2%**——专家实审+形式化可验证证明；Anthropic 线入场 L3 发现层首例（准则6"第三种满足方式"：重大发现先于方法论公开）；⚠️ 模型/方法/代码全未公开 |
 | 60 | **EvoX** | Berkeley 全栈 17 人+Stanford+Bespoke Labs（**代码与 #61 同 org 同仓库**） | arXiv 2602.23413（2026.02） | **[高价值]**（深读）**搜索策略本身当可进化对象**——停滞触发切换+前沿进展加权+策略库状态条件化；数学 **5/7 超闭源 AlphaEvolve**（100 迭代内）、Frontier-CS 中位 75.5 vs 56.2、成本 <$1 vs $15.4、**从随机策略起步仍全胜**——元级改进"在线真实窗口"端（vs #38 离线回放端，互补叠加） |
 | 61 | **SkyDiscover** | Berkeley 18 人（三共一含 #60 EvoX 共一；SkyComputing 系谱） | **ACM CAIS 2026**（**AI and Agentic Systems**新会议，Industrial Spotlight，短文） | **发现层基建化**：四组件分解（Context Builder/Solution Generator/Evaluator/Solution Selector）+可编程控制层；~2.5K LoC 双 SOTA 算法（AdaEvolve/EvoX）；数学 6/8 匹超 AlphaEvolve、系统 6/6 超人类、repo 采用自述 Google/Uber——**基建化蔓延到发现层获 venue+工业背书**（深读） |
