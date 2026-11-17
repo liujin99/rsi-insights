@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). 49 works tracked (36 launch seeds + RSI Arena + 12 industry-collection batch #38–#49), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **50 works tracked** (36 launch seeds + RSI Arena + 12 industry-collection entries #38–#49 + The Trinity #50), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -59,7 +59,7 @@ rsi-insights/
 对论文/报告的评估，除既有可信度分层规则（**定理 > 受控机制/反例 > 方向性结论 > 具体数字**；正结论最易随规模蒸发，反例/算术账最耐用）外，五项评估准则与 [data-mixture-insights](https://github.com/liujin99/data-mixture-insights) 完全一致：
 
 1. **实验规模**：必须显式记录（模型参数量+数据量+训练/迭代 tokens），与工业界主流规模对照，相差 2 个数量级以上默认标 ⚠️ 规模外推风险。
-2. **作者与发布机构**：作者背景、机构类型（头部厂商实验室 / 知名学术组 / 初创 / 单作者无机构）录入行内。
+2. **作者与发布机构**：作者背景、机构类型（头部厂商实验室 / 知名学术组 / 初创 / 单作者无机构）录入行内。**匿名处理条款（2026-11-17，#50 The Trinity 调查设立）**：品牌匿名但身份可查证（官方 BibTeX / arXiv 提交者 / 作者主页 / 代码贡献者任一可核）=**开放式匿名**，按查实机构定级；身份不可查证的**封闭匿名**默认不可定级。
 3. **业界关注度**：被大厂 TR 引用、工业采用、社区讨论度是正信号；缺乏关注度的工作引用其结论前须回溯一手证据。
 4. **开源可审计 + 社区采用**：完全开源（代码+数据或权重，足以审计核心主张）且社区采用达标（千级 star / 第三方工业采用 / ≥6 个月持续维护），可独立支撑 T1 准入。
 5. **时效**：近 2 年窗口（滚动 24 个月），出窗默认 ⚠️ 时效折损（数字/配方层尤甚）；定理与受控机制/反例层豁免；开源资产以仓库现状为准。
@@ -96,7 +96,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + RSI Arena + 业界收集批次 12 条（#38-#49，2026-11-17），共 49 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + RSI Arena + 业界收集批次 12 条（#38-#49，2026-11-17）+ The Trinity（#50，2026-11-17 机构调查后入库），共 50 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -142,6 +142,7 @@ rsi-insights/
 | 43 | **OXR** | SoMarkAI | 开源模型 2026.10（3.8k⭐，论文未出） | 1.3B 文档解析模型，**后训练用 RSI loop（自称该品类首次）**，三榜第一+速度领先——RSI 进入垂直产品管线的首个公开样本；⚠️ RSI 主张不可审计、论文即触发器；**工业实战候选观察席** |
 | 44 | **RSI-Anything** | 浙大/上海AI Lab+CUHK 系（Ouyang/Heng/Yin 等，待核） | arXiv 2610.13912（2026.10）+1.2k⭐+数据集 | JEPA-Anything 世界模型当预测器选动作选数据、观测反馈驱动改进——五域通用（代码修复/GUI/实验规划/反应优化/免疫科学）："世界模型替代外部 verifier"路线 |
 | 45 | **RSIHub** | 多机构（Wang 等，待核） | arXiv 2610.32253（2026.10） | agent 进化方法的可组合研究基建（算子+可变资源声明，执行/评估/恢复/谱系全托管）——"方法比较需要共享基建"的学术侧回应，连 reef/hermit |
+| 50 | **The Trinity** | 品牌匿名→查实 NUS HPC-AI Lab 生态（Yang You/Wangbo Zhao 锚点+CUHK/Xidian/Tongji，BibTeX 21 人全披露） | arXiv 2610.36077（2026.10）+MIT 代码（71⭐）+HF Daily #1（up 161） | 冻结底座 harness 进化：任务重组为**能力树**+Real2Sim2Real 世界生成+harness 树选择性继承+能力感知路由，44 benchmark（18 held-out）+2 真机（自报）；⚠️ 环境/产物/Router 未开源（Open-Source Plan 在途） |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 

@@ -6,8 +6,8 @@
 
 ## 评估进度（2026-11-17 更新）
 
-- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
-- **已读摘要、暂留 watch**：The Trinity（**up 161 最高热，但作者方匿名"The Trinity Research Team"、机构未披露——按准则2 不可定级，先扒机构归属，最高优先**）；CUA-Master（嵌套双环，明确批评"自生成经验式 RSI 收益递减"——正面批评视角）；R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；EvalResearchBench（**PSU/OSU/UCSC〔Qingyun Wu/Huazheng Wang/Jishen Zhao〕，agent 自建评测反馈——Q6 直接相关，优先深读**）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
+- **已入库**：RSI Arena→#37（T1）；RSI-Anything→#44、RSIHub→#45（T2）；**The Trinity→#50（T2，2026-11-17 机构调查完成：开放式匿名——品牌匿名但 BibTeX 21 人全披露+一作主页实锤，核心锚点 NUS HPC-AI Lab〔Yang You/Wangbo Zhao〕+CUHK 线；环境/产物/Router 未开源故无标记）**；GitHub 生态 9 项→#38-#41/#42/#43/#46-#49（详见下方"GitHub 生态热度补充"段映射）
+- **已读摘要、暂留 watch**：CUA-Master（嵌套双环，明确批评"自生成经验式 RSI 收益递减"——正面批评视角）；R²Orch（编排层 self-play+技能内化，指出 advantage collapse/单噪评分问题）；CoEvo-RSI（NUS 系〔Guibin Zhang/Ivor Tsang/ Shuicheng Yan〕，"brain-body mismatch"命名模型-harness 协同进化错配）；On-Policy Self-Training（免数据自蒸馏，自生成 QA+特权推理演示）；Recursa（**Jingren Zhou=阿里**——新域自适应靠自己经验不用更强老师）；EvalResearchBench（**PSU/OSU/UCSC〔Qingyun Wu/Huazheng Wang/Jishen Zhao〕，agent 自建评测反馈——Q6 直接相关，优先深读**）；Continual Learning Exam（大规模长时程 RSI 基准）；Trustworthy RSI 综述（治理线，核对与 #30 重叠）
 - **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
 
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
@@ -16,7 +16,7 @@
 
 | 标题 | arXiv | 日期 | 热度 | 备注（凭标题/摘要级） |
 |---|---|---|---|---|
-| The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents | 2610.36077 | 10-28 | **up 161** | 本窗口最热 RSI 文——能力驱动 RSI，评估优先 |
+| The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents | 2610.36077 | 10-28 | **up 161** | **已入库 #50（T2，2026-11-17）**：能力树+Real2Sim2Real+harness 树进化；开放式匿名（NUS 生态），环境/产物/Router 未开源——升级触发器=开源兑现/venue/⭐≥1k/复现 |
 | Video Generation Meets Agent Harness: Agentic Video Generation, World Modeling and RSI | 2610.40191 | 11-03 | up 77 | "harness"概念扩散到视频生成域 |
 | A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement | 2610.38568 | 10-30 | up 67 | 零数据多模态自改进 |
 | R²Orch: RSI for Agent Orchestration via Self-Play within a Skill-Internalization Loop | 2610.22740 | 11-02 | up 49 | 编排层 self-play + 技能内化（连 L1/L3） |
@@ -104,6 +104,6 @@ RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2
 
 **判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
 
-## 评估优先级（changelog 同步；2026-11-17 更新）
+## 评估优先级（changelog 同步；2026-11-17 二次更新）
 
-1. **The Trinity**（161 赞，机构未披露——先定机构归属再定级）→ 2. **EvalResearchBench**（Q6 直接相关）→ 3. **CUA-Master**（50，对自生成经验 RSI 的批评视角）→ 4. **R²Orch**（49）→ 5. **CoEvo-RSI**（46，NUS 系）→ 6. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 其余按热度。
+1. **EvalResearchBench**（Q6 直接相关——The Trinity 调查完成后顺移至最高）→ 2. **CUA-Master**（50，对自生成经验 RSI 的批评视角）→ 3. **R²Orch**（49）→ 4. **CoEvo-RSI**（46，NUS 系）→ 5. Dream-RSI/InfraRSI 深读（总表待办⑨）→ 6. The Trinity 深读+开源兑现追踪（总表待办①遗留）→ 其余按热度。
