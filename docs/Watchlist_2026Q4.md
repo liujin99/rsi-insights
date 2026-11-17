@@ -10,6 +10,7 @@
 - **已读摘要、暂留 watch**：（空——摘要级条目已于 2026-11-17 全部评估入库 #50-#58）
 - **深读批次（2026-11-17 第七批）**：**#38 Dream-RSI、#39 InfraRSI 深读完成**（两篇深读文档已建：回放模拟器>语义指导受控对照/验证工程范本/LLM 先验负相关/sign flip 命名）；**Dream-RSI 引用线索落地：Anthropic 2026 = riemann-zeta 页 → 新条目 #59（T2 [高价值]）**——研究版 Claude 把 RH 零点下界 41.6%→67.2%（Conrey/Goldston 实审+形式化验证），Anthropic 线入场 L3 发现层首例。
 - **深读批次②（2026-11-17 第八批）**：**#50 The Trinity 深读完成**（深读文档已建）——**修正 46 benchmark=28+18**（旧记 44 有误）；迭代 2-4 仍 +9.4/+6.4（Q1 L3 未饱和数据点+Eleusis 非单调诚实披露）；组织消融/路由逼近 Oracle/模块干预/真机 0→60% 全读数入库；防泄漏纪律与 #39/#51 并列**准则6 三范本**；Kaipeng Zhang 归属闭环=上海创新研究院；v1≈v2 正文零差异。
+- **harness 子域 sweep 批次（2026-11-17 第九批，总表 #60-#69）**：Trinity/Dream-RSI 深读相关工作反向定位 10 个名字全部入库——EvoX（Berkeley，#38 的在线元优化对照）/SkyDiscover（Berkeley，ACM CAIS'26 唯一 venue）/SimpleTES（#38 的 162× 对照锚）/SPADE（privileged-hint regret=撤走/特权对照信号簇第四例）/JIT-Agent（NUS，harness 生成器化）/HarnessX（疑似腾讯，harness-model loop=回流 L1 第三报名）/ModularRSI（benchmark-disjoint 卫生学）/Adaptive Auto-Harness（任务流部署+Q1 收敛侧证据）/HCL（harness-level forgetting 命名）/HSI（单作者 T3）。**横向结论③ 设立：harness 进化=L3 最密子域，引用按轴归类**。sweep 注：A-JIT 为同名无关工作已排除；Meta-harness/PACEvolve++ 记候选未入库。
 - **未读（仍凭标题）**：HarnessPro / Self-Evolving Coding Agents / A-RSI / MoLRSI / Epi / VibeGame / PhysLoop / EmoReward / ParetoRSI-Gym / DiscoveryRSI / Skill^∞ / Experience-Handoff RL / ECHO / SIMIT / TinyAstral / Evolving with Open Worlds / TSFLab / Build Don't Play / PyRUA-REAL / 物理域与多模态各条
 
 **已评估入库**：#37 RSI Arena（2610.33624，up 26）→ T1 [高价值] + README 重点关注①（2026-11-16）。
@@ -106,6 +107,6 @@ RSI 已成 GitHub 热词（2026-08 后新建仓库爆发）。**入库映射（2
 
 **判断**：星标速度远超学术采用速度，防发布脉冲条款（准则 4 新文条款）必须严格执行——reef（2.5 月 7.8k）与 OXR（1 月 3.8k）为脉冲嫌疑最大的两个，半年线复核。
 
-## 评估优先级（changelog 同步；2026-11-17 八次更新——深读批次①② 完成）
+## 评估优先级（changelog 同步；2026-11-17 九次更新——harness 子域 sweep 批次完成）
 
-1. harness 子域新名字 sweep（总表待办②：JIT-Agent/HarnessX/HSI/ModularRSI/Harness Continual Learning/Adaptive Auto-Harness/SPADE——Trinity 相关工作冒出的入库候选）→ 2. 未读 watch 条目（凭标题段）按热度滚动评估：Video Generation×Agent Harness（up 77）/A-RSI（up 67）/HarnessPro（up 31）等 → 3. #50/#57 后续读数追踪（Open-Source Plan 兑现/CLE 二届）→ 4. 触发器扫尾：RSI Arena battle 数据兑现/#59 Anthropic zeta 方法论公开/#38 arXiv 挂出 → 其余。
+1. #60-#69 深读排期：优先 **SPADE**（privileged-hint regret 信号簇核验）与 **HarnessX**（L3→L1 回流是否真做了）、JIT-Agent（"harness intelligence 可训练"）→ 2. 未读 watch 条目（凭标题段）按热度滚动评估：Video Generation×Agent Harness（up 77）/A-RSI（up 67）/HarnessPro（up 31）等 → 3. #50/#57 后续读数追踪（Open-Source Plan 兑现/CLE 二届）→ 4. 触发器扫尾：RSI Arena battle 数据兑现/#59 Anthropic zeta 方法论公开/#38 arXiv 挂出 → 其余。

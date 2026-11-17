@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **59 works tracked** (36 launch seeds + 23 later entries #37–#59 incl. the industry batch, nine watch-evaluated works and the Anthropic zeta result), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **69 works tracked** (36 launch seeds + 33 later entries #37–#69 incl. the industry batch, nine watch-evaluated works, the Anthropic zeta result and the harness-subdomain sweep), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -18,7 +18,7 @@ Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 |---|---|---|---|
 | **L1 权重层** | 模型参数 | STaR / ReST / Self-Rewarding / Absolute Zero / RSI Arena | 可验证奖励（数学/代码）下已工业可用；自评奖励有漂移风险；agent 自主后训练已有关闭 76% base→Instruct 差距的受控实证（#37） |
 | **L2 上下文层** | prompt 内的推理轨迹 | Self-Refine / Reflexion / self-correction 线 | 有外反馈时有效；纯内在自纠错有受控反例（#03） |
-| **L3 代码/工具层** | agent 自己的脚手架与工具 | Voyager / FunSearch / AlphaEvolve / DGM / Gödel Agent / Dream-RSI / AntOmniEvo / hermit / reef | 最活跃层；AlphaEvolve 已生产部署；**2026H2 工业界集体入场**（Google/DeepMind、华为诺亚×2、蚂蚁、SoMark、**Anthropic〔#59：研究版 Claude 把 RH 零点下界 41.6%→67.2%，专家实审+形式化验证〕**） |
+| **L3 代码/工具层** | agent 自己的脚手架与工具 | Voyager / FunSearch / AlphaEvolve / DGM / Gödel Agent / Dream-RSI / AntOmniEvo / hermit / reef / JIT-Agent 等 harness 子域 | 最活跃层；AlphaEvolve 已生产部署；**2026H2 工业界集体入场**（Google/DeepMind、华为诺亚×2、蚂蚁、SoMark、**Anthropic〔#59：研究版 Claude 把 RH 零点下界 41.6%→67.2%，专家实审+形式化验证〕**）；**harness 进化=L3 内部最密子域（2026-11 sweep +10 条 #60-#69）** |
 | **L4 流程层** | 研究流程本身 | AI Scientist / Agent Laboratory / co-scientist / MLE-bench / RE-Bench / PaperBench | 复现型工程先被吃掉，原创研究尚未触及 |
 | **L5 治理/测量线** | 监督能力与进度标尺 | Weak-to-Strong / Recursive RM / METR / RSI Arena（人评竞技场） | 监督瓶颈是治理正题不是副题；盲评人竞场成为 L1 层的外部验证器新范式 |
 
@@ -100,7 +100,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 23 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39 补深读〕/ Anthropic zeta #59），共 59 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 33 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52 / R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69），共 69 条，每行**一句话核心**。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
@@ -154,6 +154,15 @@ rsi-insights/
 | 55 | **Recursa** | Alibaba Research（Jingren Zhou 系） | arXiv 2611.04035（2026.11） | FM 系统级自改进：新域自适应**不用人类专家/更强老师**——结构化知识仓库（技能+指令+记忆+反思）bootstrap 后递归精炼；与 #52 构成"自经验是否饱和"正反对照线 |
 | 57 | **Continual Learning Exam** | UCL（Jun Wang 系）+Imperial+PKU+UNC 等 | arXiv 2610.33956（2026.10）+开源基准 | **经验驱动改进首把大规模标尺**（600 级进阶梯+16,125 人工检查项）：17 个前沿配置**反馈修订中位仅 +5.3pp、最好 47.7% 过级、23.3% 全通关**——前沿模型经验复利在真实工作流≈0（Q1/Q4 硬地板读数）；**[高价值]** |
 | 59 | **Claude 黎曼 zeta 零点下界推进** | Anthropic（Conrey/Goldston 外部实审） | anthropic.com/research/riemann-zeta（2026.08） | **[高价值]** 未公开研究版 Claude 攻 RH 未成，但把**满足 RH 的零点比例下界 41.6%→67.2%**——专家实审+形式化可验证证明；Anthropic 线入场 L3 发现层首例（准则6"第三种满足方式"：重大发现先于方法论公开）；⚠️ 模型/方法/代码全未公开 |
+| 60 | **EvoX** | Berkeley 系（Sky 系谱签名） | arXiv 2602.23413（2026.02） | **搜索策略本身也要进化**（meta-evolution）——#38 Dream-RSI 所引"在线元优化"代表，与 #38 构成"在线元优化 vs 离线回放"直接对照对 |
+| 61 | **SkyDiscover** | Berkeley 全栈（Cemri/Zaharia/Stoica/Dimakis 等） | **ACM CAIS 2026**（短文） | "自适应发现基建"框架——Berkeley 把发现系统当基建层做（Sky 命名系谱）；本批唯一有正式 venue 的工作 |
+| 62 | **SimpleTES** | Ye/Lin 系（MIT/Harvard，AI Scientist 作者群） | arXiv 2604.19341（2026.04） | "评测驱动的结构化 scaling"——**#38 的 162× 对照锚**（GPT-OSS-120B+51,200 代强基线）；"scaling 要结构化到评测信号能复利"连 Q1 |
+| 63 | **SPADE** | 多机构联队（UT Austin/OpenAI/KAIST 等签名，待核） | arXiv 2608.19197（2026.08） | **一个 LLM 分饰两角的自博弈**：Designer 写可执行训练环境（含验证代码）、Agent 学——**privileged-hint regret**="撤走/特权对照"信号簇第四例；环境造在能力边缘 |
+| 64 | **JIT-Agent** | NUS 系（Guibin Zhang=#54 同生态） | arXiv 2608.25593（2026.08） | **harness 生成做成一个训练出来的模型**（四模块协议工件，即时合成+修复+档案蒸馏自进化）——DeepSeek-V4-Flash+JIT 超 GPT-5.6、GLM-5.2 +20.2；harness 生产第三范式（vs #50 能力树/#65 代数组装） |
+| 65 | **HarnessX** | 疑似腾讯系（Jian Luan/Kun Shao 签名，待核） | arXiv 2606.14249（2026.06） | 类型化原语+**替换代数**组装 harness+AEGIS 进化引擎，**闭环 harness-model loop（轨迹→harness 更新+模型训练信号）**="L3 回流 L1"第三个自我报名（连 #40/#50） |
+| 66 | **ModularRSI** | Manchester+中国机构（分工待核） | arXiv 2609.14857（2026.09） | 可泛化 harness 进化的**评测卫生学**：benchmark-disjoint+对照式缺陷归因+五功能模块受限域独立进化——**"在评测集上演化=基准特定适应"=准则6 的 harness 层表述** |
+| 67 | **Adaptive Auto-Harness** | Northeastern（Dakuo Wang）系 | arXiv 2606.01770（2026.06，v3 11） | 开放任务流持续自改进（预测市场 22.2→80.9%）+**"工件累积不保证持续增益、可迁移知识随分布变化贬值"**=Q1 收敛侧新证据——持续进化靠修订累积知识保增益 |
+| 68 | **Harness Continual Learning** | 中国机构（Yang Gao/Lei Wang 签名，待核） | arXiv 2608.19013（2026.08） | **命名 harness-level forgetting**（harness 更新破坏先前可靠行为=参数层灾难性遗忘的 harness 镜像）+三关提交守护进化（改进/历史保持/有效性）——准则6 的 harness 层等价物 |
 
 ### 第三梯队：方向参考（理论源头 / 预测情景 / 综述 / 待验证）
 
@@ -173,6 +182,7 @@ rsi-insights/
 | 49 | **RSI-Exam** | aiming-lab | 开源基准 2026.08（198⭐，MIT） | **[有意思]** 可执行研究式 RSI 基准：88 任务（35 公开+**53 held-out 防作弊**）——held-out 纪律的正面样本 |
 | 56 | **On-Policy Self-Training** | Google+Ulm University | arXiv 2610.32770（2026.10） | **[有意思]** 免数据自蒸馏极简配方：粗主题描述→自生成 QA+特权推理演示当蒸馏信号（E2B MMLU +10.2）——开放域无执行器时的软验证变通（连 #16） |
 | 58 | **Trustworthy RSI 综述** | 人大高瓴人工智能学院 | arXiv 2610.35193（2026.10） | **[有意思]** 可信 RSI 风险分类：评估缺陷/能力退化/合规弱化/工件污染持续/**机制变更使验证失效**——与本库准则6 同频的治理线梳理（连 #30 互补） |
+| 69 | **HSI（Hierarchical Self-Improvement）** | 单作者（Tailin Zhou，无机构标注） | arXiv 2608.08466（2026.08） | **[有意思]** 任务族专属可热插拔 harness（Trinity 的 per-task-family 引文）——与 #50 构成正反读：任务族分 harness vs 能力分 harness（#50 表3 受控显示后者更优）；单作者无机构降档 T3 |
 
 ### 第四梯队：轴外谱系参照
 
