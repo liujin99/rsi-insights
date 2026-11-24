@@ -2,7 +2,7 @@
 
 Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 
-> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **151 works tracked** (36 launch seeds + 115 later entries #37–#151 incl. the industry batch, the Anthropic zeta result, the harness-subdomain sweep with nine deep reads (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL), rolling light-evaluation batches of watch entries, the reference-cluster adjudication batch, the edge-pool clearing batch, Piccolo (#99, Alibaba's decision-model RSI), and the Nov 16–20 flood batch (#100–#149: RSI-Prime, BaseRSI, the weight-self-rewrite line, RSIBench-Infra, Resolution Hypothesis, AdaObs and the Feedback-Free negative result)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
+> **English**: A tier-graded research-insight library on **Recursive Self-Improvement (RSI)** — self-improving AI across four layers (weights / context / code & tools / research process), plus a governance & measurement line (oversight, task-horizon benchmarks). **153 works tracked** (36 launch seeds + 117 later entries #37–#153 incl. the industry batch, the Anthropic zeta result, the harness-subdomain sweep with nine deep reads (SPADE / HarnessX / JIT-Agent / EvoX / SimpleTES / Adaptive Auto-Harness / SkyDiscover / ModularRSI / HCL), rolling light-evaluation batches of watch entries, the reference-cluster adjudication batch, the edge-pool clearing batch, Piccolo (#99, Alibaba's decision-model RSI), and the Nov 16–20 flood batch (#100–#149: RSI-Prime, BaseRSI, the weight-self-rewrite line, RSIBench-Infra, Resolution Hypothesis, AdaObs and the Feedback-Free negative result)), adjudicated (T1–T4) under the credibility rubric inherited from the sister library (experiment scale / institution / community traction / open-source auditability + adoption / recency ≤2y), with one **RSI-specific clause: self-improvement claims must be auditable** — "the agent says it got better" is not evidence; held-out evaluation or third-party replication is required. Notes are in Chinese; the tier tables are language-light.
 
 > **免责声明**：本项目所有分析、评估和结论均为个人主观看法，针对特定场景（LLM 训练/研究环节的自改进闭环 + agent 自改系统的演进追踪）进行的判断，不代表任何官方立场，也不构成对任何论文或方法的权威评价。论文的梯队划分、价值标记和行动建议仅为本项目内部工作参考。
 
@@ -42,7 +42,7 @@ Recursive Self-Improvement（递归自我改进）领域的研究洞察项目。
 | 工作者·快速查结论 | [`关键Takeaway.md`](docs/关键Takeaway.md) | [高价值] 家族 31 条一句话结论（白话与细节之间的中间层） |
 | 查具体某篇工作 | [`论文总表.md`](docs/论文总表.md) | 98 条主表：梯队/标记/机构/venue/一句话核心+建库 changelog |
 | 写论文要引用 | [`引用名册.md`](docs/引用名册.md) | 入库判定规则 R1-R3+五簇名册+撞名警示（Lin 三重/Chen 四重——子域引用一律带 arXiv ID） |
-| 深入某一篇 | `docs/*_深度分析.md`（25 篇） | 单篇深读：受控对照/读数对表/诚实边界逐项核 |
+| 深入某一篇 | `docs/*_深度分析.md`（27 篇） | 单篇深读：受控对照/读数对表/诚实边界逐项核 |
 | 库维护/增量追踪 | [`Watchlist_2026Q4.md`](docs/Watchlist_2026Q4.md)+总表 changelog | 触发器/待办/批次记录（内部工作文档） |
 
 ## 目录结构
@@ -79,8 +79,10 @@ rsi-insights/
 │   ├── SelfRewrite-Keel_深度分析.md     # #102+#107 合并深读文档（2026-11-24，深读批次⑮——权重自改线同组平行双作）
 │   ├── CurationBench_深度分析.md        # #150 深读文档（2026-11-24，深读批次⑯——数据配方 RSI 簇①，用户点名）
 │   ├── GodelForest_深度分析.md          # #151 深读文档（2026-11-24，深读批次⑯——数据配方 RSI 簇①，用户点名）
+│   ├── RSIBenchData_深度分析.md         # #152 深读文档（2026-11-24，深读批次⑰——数据配方 RSI 簇②：尺子）
+│   ├── DataMaster_深度分析.md           # #153 深读文档（2026-11-24，深读批次⑰——数据配方 RSI 簇②：用户设定正面实现）
 │   ├── 引用名册.md                      # 按轴引用名册（五簇 ≥93 名归类决定+入库判定规则，2026-11-17 归类批次⑮）
-│   ├── 白话总结.md                      # 全库零门槛版本（151 条/25 篇深读浓缩成人话，2026-11-24 计数同步）
+│   ├── 白话总结.md                      # 全库零门槛版本（153 条/27 篇深读浓缩成人话，2026-11-24 计数同步）
 │   └── Watchlist_2026Q4.md             # 2026Q4 热度扫描 watch 名单（未评估，凭标题+热度收录）
 └── README.md
 ```
@@ -136,7 +138,7 @@ rsi-insights/
 
 ## 论文索引
 
-> 建库种子 36 篇 + 后续 53 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52〔深读〕/ R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74〕/ 轻评估批次③〔#75-#81，up≥20 七条：Épi/Criteria Exposure/EmoReward/MoLRSI/VibeGame/Physical AI RSI/PhysRSI-eval〕/ 轻评估批次④〔#82-#89，up≥10 八条：DiscoveryRSI/Build Don't Play（AutoTavern）/ECHO/SERA/ParetoRSI-Gym/PyRUA-REAL/ACE-RL/Auxiliary Rewards〕），共 89 条（本索引枚举至 #89；#90-#151 的 62 条一句话核心见 [`docs/论文总表.md`](docs/论文总表.md)，其中 [高价值] 深读队列见 Watchlist 评估进度行）。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
+> 建库种子 36 篇 + 后续 53 条（#37 RSI Arena / 业界收集批次 #38-#49 / The Trinity #50 / EvalResearchBench #51〔深读〕/ CUA-Master #52〔深读〕/ R²Orch #53 / CoEvo-RSI #54 / 轻评估批次 #55-#58 / 深读批次〔#38/#39/#50 补深读〕/ Anthropic zeta #59 / harness 子域 sweep 批次 #60-#69 / 深读批次③④⑤⑥〔#63/#64/#65/#60/#62/#67/#61/#66/#68 九连——harness 子域 sweep 深读全闭环〕）/ 轻评估批次②〔#70-#74〕/ 轻评估批次③〔#75-#81，up≥20 七条：Épi/Criteria Exposure/EmoReward/MoLRSI/VibeGame/Physical AI RSI/PhysRSI-eval〕/ 轻评估批次④〔#82-#89，up≥10 八条：DiscoveryRSI/Build Don't Play（AutoTavern）/ECHO/SERA/ParetoRSI-Gym/PyRUA-REAL/ACE-RL/Auxiliary Rewards〕），共 89 条（本索引枚举至 #89；#90-#153 的 64 条一句话核心见 [`docs/论文总表.md`](docs/论文总表.md)，其中 [高价值] 深读队列见 Watchlist 评估进度行）。详细内容、⚠️ 边界与梯队裁定注记以 [`docs/论文总表.md`](docs/论文总表.md) 为准。
 >
 > **标记说明**：`[高价值/重要]` = 领域理论根基；`[高价值]` = 直接可用方法/证据；`[高价值/反例]` = 受控反例（按证据排序最耐用的一类）；`[工业实战/…]` = 工业实战精选成员；`[有意思]` = 有价值但需批判看待；`[轴外]` = 谱系参照不作直接参考。约束：无后缀 `[高价值]` 仅限 T1/T2。
 
